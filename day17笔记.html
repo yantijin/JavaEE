@@ -1,0 +1,924 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>day17.集合框架(3) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="day18笔记.html" />
+    
+    
+    <link rel="prev" href="day16笔记.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="day01笔记.html">
+            
+                <a href="day01笔记.html">
+            
+                    
+                    day01.计算机基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="day02笔记.html">
+            
+                <a href="day02笔记.html">
+            
+                    
+                    day02.Java语言基础(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="day03笔记.html">
+            
+                <a href="day03笔记.html">
+            
+                    
+                    day03.Java语言基础(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="day04笔记.html">
+            
+                <a href="day04笔记.html">
+            
+                    
+                    day04.Java语言基础(3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="day05笔记.html">
+            
+                <a href="day05笔记.html">
+            
+                    
+                    day05.Java语言基础(4)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="day06笔记.html">
+            
+                <a href="day06笔记.html">
+            
+                    
+                    day06.面向对象(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="day07笔记.html">
+            
+                <a href="day07笔记.html">
+            
+                    
+                    day07.面向对象(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="day08笔记.html">
+            
+                <a href="day08笔记.html">
+            
+                    
+                    day08.面向对象(3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="day10笔记.html">
+            
+                <a href="day10笔记.html">
+            
+                    
+                    day10.面向对象(4)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="day11笔记.html">
+            
+                <a href="day11笔记.html">
+            
+                    
+                    day11.Java开发工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="day13笔记.html">
+            
+                <a href="day13笔记.html">
+            
+                    
+                    day13.常见对象(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="day14笔记.html">
+            
+                <a href="day14笔记.html">
+            
+                    
+                    day14.常见对象(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="day15笔记.html">
+            
+                <a href="day15笔记.html">
+            
+                    
+                    day15.集合框架(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="day16笔记.html">
+            
+                <a href="day16笔记.html">
+            
+                    
+                    day16.集合框架(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.16" data-path="day17笔记.html">
+            
+                <a href="day17笔记.html">
+            
+                    
+                    day17.集合框架(3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="day18笔记.html">
+            
+                <a href="day18笔记.html">
+            
+                    
+                    day18.集合框架(4)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="day19笔记.html">
+            
+                <a href="day19笔记.html">
+            
+                    
+                    day19.异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="day20笔记.html">
+            
+                <a href="day20笔记.html">
+            
+                    
+                    day20.IO流(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="day21笔记.html">
+            
+                <a href="day21笔记.html">
+            
+                    
+                    day21.IO流(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="day22笔记.html">
+            
+                <a href="day22笔记.html">
+            
+                    
+                    day22.IO流(3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="day23笔记.html">
+            
+                <a href="day23笔记.html">
+            
+                    
+                    day23.File类及递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="day24笔记.html">
+            
+                <a href="day24笔记.html">
+            
+                    
+                    day24.多线程(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="day25笔记.html">
+            
+                <a href="day25笔记.html">
+            
+                    
+                    day25.多线程(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="day26笔记.html">
+            
+                <a href="day26笔记.html">
+            
+                    
+                    day26.网络编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="day27笔记.html">
+            
+                <a href="day27笔记.html">
+            
+                    
+                    day27.反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >day17.集合框架(3)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="day17&#x96C6;&#x5408;&#x6846;&#x67B6;3">day17.&#x96C6;&#x5408;&#x6846;&#x67B6;(3)</h1>
+<h3 id="1701&#x96C6;&#x5408;&#x6846;&#x67B6;hashset&#x5B58;&#x50A8;&#x5B57;&#x7B26;&#x4E32;&#x5E76;&#x904D;&#x5386;">17.01_&#x96C6;&#x5408;&#x6846;&#x67B6;(HashSet&#x5B58;&#x50A8;&#x5B57;&#x7B26;&#x4E32;&#x5E76;&#x904D;&#x5386;)</h3>
+<ul>
+<li><p>A:Set&#x96C6;&#x5408;&#x6982;&#x8FF0;&#x53CA;&#x7279;&#x70B9;</p>
+<ul>
+<li>&#x901A;&#x8FC7;API&#x67E5;&#x770B;&#x5373;&#x53EF;</li>
+</ul>
+</li>
+<li>B:&#x6848;&#x4F8B;&#x6F14;&#x793A;<ul>
+<li>HashSet&#x5B58;&#x50A8;&#x5B57;&#x7B26;&#x4E32;&#x5E76;&#x904D;&#x5386;</li>
+<li><pre><code>   HashSet&lt;String&gt; hs = new HashSet&lt;&gt;();
+</code></pre>  &#x200B;    boolean b1 = hs.add(&quot;a&quot;);
+  &#x200B;    boolean b2 = hs.add(&quot;a&quot;);            //&#x5F53;&#x5B58;&#x50A8;&#x4E0D;&#x6210;&#x529F;&#x7684;&#x65F6;&#x5019;,&#x8FD4;&#x56DE;false
+  &#x200B;    <pre><code>  System.out.println(b1);
+  System.out.println(b2);
+  for(String s : hs) {
+      System.out.println(s);
+  }
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h3 id="1702&#x96C6;&#x5408;&#x6846;&#x67B6;hashset&#x5B58;&#x50A8;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x4FDD;&#x8BC1;&#x5143;&#x7D20;&#x552F;&#x4E00;&#x6027;">17.02_&#x96C6;&#x5408;&#x6846;&#x67B6;(HashSet&#x5B58;&#x50A8;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x4FDD;&#x8BC1;&#x5143;&#x7D20;&#x552F;&#x4E00;&#x6027;)</h3>
+<ul>
+<li><p>A:&#x6848;&#x4F8B;&#x6F14;&#x793A;</p>
+<ul>
+<li><p>&#x5B58;&#x50A8;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4FDD;&#x8BC1;&#x5143;&#x7D20;&#x552F;&#x4E00;&#x6027;&#x3002;</p>
+<pre><code>  HashSet&lt;Person&gt; hs = new HashSet&lt;&gt;();
+</code></pre><p>  &#x200B;    hs.add(new Person(&quot;&#x5F20;&#x4E09;&quot;, 23));
+  &#x200B;    hs.add(new Person(&quot;&#x5F20;&#x4E09;&quot;, 23));
+  &#x200B;    hs.add(new Person(&quot;&#x674E;&#x56DB;&quot;, 23));
+  &#x200B;    hs.add(new Person(&quot;&#x674E;&#x56DB;&quot;, 23));
+  &#x200B;    hs.add(new Person(&quot;&#x738B;&#x4E94;&quot;, 23));
+  &#x200B;    hs.add(new Person(&quot;&#x8D75;&#x516D;&quot;, 23));</p>
+</li>
+</ul>
+</li>
+<li>&#x91CD;&#x5199;hashCode()&#x548C;equals()&#x65B9;&#x6CD5;<h3 id="1703&#x96C6;&#x5408;&#x6846;&#x67B6;hashset&#x5B58;&#x50A8;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x4FDD;&#x8BC1;&#x5143;&#x7D20;&#x552F;&#x4E00;&#x6027;&#x56FE;&#x89E3;&#x53CA;&#x4EE3;&#x7801;&#x4F18;&#x5316;">17.03_&#x96C6;&#x5408;&#x6846;&#x67B6;(HashSet&#x5B58;&#x50A8;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x4FDD;&#x8BC1;&#x5143;&#x7D20;&#x552F;&#x4E00;&#x6027;&#x56FE;&#x89E3;&#x53CA;&#x4EE3;&#x7801;&#x4F18;&#x5316;)</h3>
+</li>
+<li><p>A:&#x753B;&#x56FE;&#x6F14;&#x793A;</p>
+<ul>
+<li>&#x753B;&#x56FE;&#x8BF4;&#x660E;&#x6BD4;&#x8F83;&#x8FC7;&#x7A0B;</li>
+</ul>
+</li>
+<li>B:&#x4EE3;&#x7801;&#x4F18;&#x5316;<ul>
+<li>&#x4E3A;&#x4E86;&#x51CF;&#x5C11;&#x6BD4;&#x8F83;&#xFF0C;&#x4F18;&#x5316;hashCode()&#x4EE3;&#x7801;&#x5199;&#x6CD5;&#x3002;</li>
+<li>&#x6700;&#x7EC8;&#x7248;&#x5C31;&#x662F;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x5373;&#x53EF;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h3 id="1704&#x96C6;&#x5408;&#x6846;&#x67B6;hashset&#x5982;&#x4F55;&#x4FDD;&#x8BC1;&#x5143;&#x7D20;&#x552F;&#x4E00;&#x6027;&#x7684;&#x539F;&#x7406;">17.04_&#x96C6;&#x5408;&#x6846;&#x67B6;(HashSet&#x5982;&#x4F55;&#x4FDD;&#x8BC1;&#x5143;&#x7D20;&#x552F;&#x4E00;&#x6027;&#x7684;&#x539F;&#x7406;)</h3>
+<ul>
+<li>1.HashSet&#x539F;&#x7406;<ul>
+<li>&#x6211;&#x4EEC;&#x4F7F;&#x7528;Set&#x96C6;&#x5408;&#x90FD;&#x662F;&#x9700;&#x8981;&#x53BB;&#x6389;&#x91CD;&#x590D;&#x5143;&#x7D20;&#x7684;, &#x5982;&#x679C;&#x5728;&#x5B58;&#x50A8;&#x7684;&#x65F6;&#x5019;&#x9010;&#x4E2A;equals()&#x6BD4;&#x8F83;, &#x6548;&#x7387;&#x8F83;&#x4F4E;,&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;&#x63D0;&#x9AD8;&#x4E86;&#x53BB;&#x91CD;&#x590D;&#x7684;&#x6548;&#x7387;, &#x964D;&#x4F4E;&#x4E86;&#x4F7F;&#x7528;equals()&#x65B9;&#x6CD5;&#x7684;&#x6B21;&#x6570;</li>
+<li>&#x5F53;HashSet&#x8C03;&#x7528;add()&#x65B9;&#x6CD5;&#x5B58;&#x50A8;&#x5BF9;&#x8C61;&#x7684;&#x65F6;&#x5019;, &#x5148;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684;hashCode()&#x65B9;&#x6CD5;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#x503C;, &#x7136;&#x540E;&#x5728;&#x96C6;&#x5408;&#x4E2D;&#x67E5;&#x627E;&#x662F;&#x5426;&#x6709;&#x54C8;&#x5E0C;&#x503C;&#x76F8;&#x540C;&#x7684;&#x5BF9;&#x8C61;<ul>
+<li>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x54C8;&#x5E0C;&#x503C;&#x76F8;&#x540C;&#x7684;&#x5BF9;&#x8C61;&#x5C31;&#x76F4;&#x63A5;&#x5B58;&#x5165;&#x96C6;&#x5408;</li>
+<li>&#x5982;&#x679C;&#x6709;&#x54C8;&#x5E0C;&#x503C;&#x76F8;&#x540C;&#x7684;&#x5BF9;&#x8C61;, &#x5C31;&#x548C;&#x54C8;&#x5E0C;&#x503C;&#x76F8;&#x540C;&#x7684;&#x5BF9;&#x8C61;&#x9010;&#x4E2A;&#x8FDB;&#x884C;equals()&#x6BD4;&#x8F83;,&#x6BD4;&#x8F83;&#x7ED3;&#x679C;&#x4E3A;false&#x5C31;&#x5B58;&#x5165;, true&#x5219;&#x4E0D;&#x5B58;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>2.&#x5C06;&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x5B58;&#x5165;HashSet&#x53BB;&#x91CD;&#x590D;<ul>
+<li>&#x7C7B;&#x4E2D;&#x5FC5;&#x987B;&#x91CD;&#x5199;hashCode()&#x548C;equals()&#x65B9;&#x6CD5;</li>
+<li>hashCode(): &#x5C5E;&#x6027;&#x76F8;&#x540C;&#x7684;&#x5BF9;&#x8C61;&#x8FD4;&#x56DE;&#x503C;&#x5FC5;&#x987B;&#x76F8;&#x540C;, &#x5C5E;&#x6027;&#x4E0D;&#x540C;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x5C3D;&#x91CF;&#x4E0D;&#x540C;(&#x63D0;&#x9AD8;&#x6548;&#x7387;)</li>
+<li>equals(): &#x5C5E;&#x6027;&#x76F8;&#x540C;&#x8FD4;&#x56DE;true, &#x5C5E;&#x6027;&#x4E0D;&#x540C;&#x8FD4;&#x56DE;false,&#x8FD4;&#x56DE;false&#x7684;&#x65F6;&#x5019;&#x5B58;&#x50A8;</li>
+</ul>
+</li>
+</ul>
+<h3 id="1705&#x96C6;&#x5408;&#x6846;&#x67B6;linkedhashset&#x7684;&#x6982;&#x8FF0;&#x548C;&#x4F7F;&#x7528;">17.05_&#x96C6;&#x5408;&#x6846;&#x67B6;(LinkedHashSet&#x7684;&#x6982;&#x8FF0;&#x548C;&#x4F7F;&#x7528;)</h3>
+<ul>
+<li>A:LinkedHashSet&#x7684;&#x7279;&#x70B9;</li>
+<li>B:&#x6848;&#x4F8B;&#x6F14;&#x793A;<ul>
+<li>LinkedHashSet&#x7684;&#x7279;&#x70B9;<ul>
+<li>&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x600E;&#x4E48;&#x5B58;&#x5C31;&#x600E;&#x4E48;&#x53D6; </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="1706&#x96C6;&#x5408;&#x6846;&#x67B6;&#x4EA7;&#x751F;10&#x4E2A;1-20&#x4E4B;&#x95F4;&#x7684;&#x968F;&#x673A;&#x6570;&#x8981;&#x6C42;&#x968F;&#x673A;&#x6570;&#x4E0D;&#x80FD;&#x91CD;&#x590D;">17.06_&#x96C6;&#x5408;&#x6846;&#x67B6;(&#x4EA7;&#x751F;10&#x4E2A;1-20&#x4E4B;&#x95F4;&#x7684;&#x968F;&#x673A;&#x6570;&#x8981;&#x6C42;&#x968F;&#x673A;&#x6570;&#x4E0D;&#x80FD;&#x91CD;&#x590D;)</h3>
+<ul>
+<li><p>A:&#x6848;&#x4F8B;&#x6F14;&#x793A;</p>
+<ul>
+<li>&#x9700;&#x6C42;&#xFF1A;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#xFF0C;&#x83B7;&#x53D6;10&#x4E2A;1&#x81F3;20&#x7684;&#x968F;&#x673A;&#x6570;&#xFF0C;&#x8981;&#x6C42;&#x968F;&#x673A;&#x6570;&#x4E0D;&#x80FD;&#x91CD;&#x590D;&#x3002;&#x5E76;&#x628A;&#x6700;&#x7EC8;&#x7684;&#x968F;&#x673A;&#x6570;&#x8F93;&#x51FA;&#x5230;&#x63A7;&#x5236;&#x53F0;&#x3002;</li>
+<li><pre><code>  HashSet&lt;Integer&gt; hs = new HashSet&lt;&gt;();        //&#x521B;&#x5EFA;&#x96C6;&#x5408;&#x5BF9;&#x8C61;
+</code></pre><p>  &#x200B;    Random r = new Random();                    //&#x521B;&#x5EFA;&#x968F;&#x673A;&#x6570;&#x5BF9;&#x8C61;
+  &#x200B;    </p>
+<pre><code>  while(hs.size() &lt; 10) {
+      int num = r.nextInt(20) + 1;            //&#x751F;&#x6210;1&#x5230;20&#x7684;&#x968F;&#x673A;&#x6570;
+      hs.add(num);
+  }
+
+  for (Integer integer : hs) {                //&#x904D;&#x5386;&#x96C6;&#x5408;
+      System.out.println(integer);            //&#x6253;&#x5370;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;
+  }
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h3 id="1707&#x96C6;&#x5408;&#x6846;&#x67B6;&#x7EC3;&#x4E60;">17.07_&#x96C6;&#x5408;&#x6846;&#x67B6;(&#x7EC3;&#x4E60;)</h3>
+<ul>
+<li><p>&#x4F7F;&#x7528;Scanner&#x4ECE;&#x952E;&#x76D8;&#x8BFB;&#x53D6;&#x4E00;&#x884C;&#x8F93;&#x5165;,&#x53BB;&#x6389;&#x5176;&#x4E2D;&#x91CD;&#x590D;&#x5B57;&#x7B26;, &#x6253;&#x5370;&#x51FA;&#x4E0D;&#x540C;&#x7684;&#x90A3;&#x4E9B;&#x5B57;&#x7B26;</p>
+<ul>
+<li><p>aaaabbbcccddd</p>
+<pre><code>  Scanner sc = new Scanner(System.in);            //&#x521B;&#x5EFA;&#x952E;&#x76D8;&#x5F55;&#x5165;&#x5BF9;&#x8C61;
+</code></pre><p>  &#x200B;    System.out.println(&quot;&#x8BF7;&#x8F93;&#x5165;&#x4E00;&#x884C;&#x5B57;&#x7B26;&#x4E32;:&quot;);
+  &#x200B;    String line = sc.nextLine();                    //&#x5C06;&#x952E;&#x76D8;&#x5F55;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5B58;&#x50A8;&#x5728;line&#x4E2D;
+  &#x200B;    char[] arr = line.toCharArray();                //&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x5B57;&#x7B26;&#x6570;&#x7EC4;
+  &#x200B;    HashSet<character> hs = new HashSet&lt;&gt;();        //&#x521B;&#x5EFA;HashSet&#x96C6;&#x5408;&#x5BF9;&#x8C61;
+  &#x200B;    </character></p>
+<pre><code>  for(char c : arr) {                                //&#x904D;&#x5386;&#x5B57;&#x7B26;&#x6570;&#x7EC4;
+      hs.add(c);                                    //&#x5C06;&#x5B57;&#x7B26;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x6DFB;&#x52A0;&#x5230;&#x96C6;&#x5408;&#x4E2D;
+  }
+
+  for (Character ch : hs) {                        //&#x904D;&#x5386;&#x96C6;&#x5408;
+      System.out.println(ch);
+  }
+</code></pre><h3 id="1708&#x96C6;&#x5408;&#x6846;&#x67B6;&#x7EC3;&#x4E60;">17.08_&#x96C6;&#x5408;&#x6846;&#x67B6;(&#x7EC3;&#x4E60;)</h3>
+</li>
+</ul>
+</li>
+<li>&#x5C06;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x91CD;&#x590D;&#x5143;&#x7D20;&#x53BB;&#x6389;</li>
+<li><pre><code>      public static void main(String[] args) {
+</code></pre><p>  &#x200B;            ArrayList<string> list = new ArrayList&lt;&gt;();
+  &#x200B;            list.add(&quot;a&quot;);
+  &#x200B;            list.add(&quot;a&quot;);
+  &#x200B;            list.add(&quot;a&quot;);
+  &#x200B;            list.add(&quot;b&quot;);
+  &#x200B;            list.add(&quot;b&quot;);
+  &#x200B;            list.add(&quot;b&quot;);
+  &#x200B;            list.add(&quot;b&quot;);
+  &#x200B;            list.add(&quot;c&quot;);
+  &#x200B;            list.add(&quot;c&quot;);
+  &#x200B;            list.add(&quot;c&quot;);
+  &#x200B;            list.add(&quot;c&quot;);
+  &#x200B;            </string></p>
+<pre><code>          System.out.println(list);
+          System.out.println(&quot;&#x53BB;&#x9664;&#x91CD;&#x590D;&#x540E;:&quot;);
+          getSingle(list);
+          System.out.println(list);
+      }
+
+      /*
+       * &#x5C06;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x91CD;&#x590D;&#x5143;&#x7D20;&#x53BB;&#x6389;
+       * 1,void
+       * 2,List&lt;String&gt; list
+       */
+
+      public static void getSingle(List&lt;String&gt; list) {
+          LinkedHashSet&lt;String&gt; lhs = new LinkedHashSet&lt;&gt;();
+          lhs.addAll(list);                                    //&#x5C06;list&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x5230;lhs
+          list.clear();                                        //&#x6E05;&#x7A7A;&#x539F;&#x96C6;&#x5408;
+          list.addAll(lhs);                                    //&#x5C06;&#x53BB;&#x9664;&#x91CD;&#x590D;&#x7684;&#x5143;&#x7D20;&#x6DFB;&#x56DE;&#x5230;list&#x4E2D;
+      }
+</code></pre></li>
+</ul>
+<h3 id="1709&#x96C6;&#x5408;&#x6846;&#x67B6;treeset&#x5B58;&#x50A8;integer&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#x5E76;&#x904D;&#x5386;">17.09_&#x96C6;&#x5408;&#x6846;&#x67B6;(TreeSet&#x5B58;&#x50A8;Integer&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#x5E76;&#x904D;&#x5386;)</h3>
+<ul>
+<li>A:&#x6848;&#x4F8B;&#x6F14;&#x793A;<ul>
+<li>TreeSet&#x5B58;&#x50A8;Integer&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#x5E76;&#x904D;&#x5386;</li>
+</ul>
+</li>
+</ul>
+<h3 id="1710&#x96C6;&#x5408;&#x6846;&#x67B6;treeset&#x5B58;&#x50A8;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;">17.10_&#x96C6;&#x5408;&#x6846;&#x67B6;(TreeSet&#x5B58;&#x50A8;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;)</h3>
+<ul>
+<li>A:&#x6848;&#x4F8B;&#x6F14;&#x793A;<ul>
+<li>&#x5B58;&#x50A8;Person&#x5BF9;&#x8C61;</li>
+</ul>
+</li>
+</ul>
+<h3 id="1711&#x96C6;&#x5408;&#x6846;&#x67B6;treeset&#x4FDD;&#x8BC1;&#x5143;&#x7D20;&#x552F;&#x4E00;&#x548C;&#x81EA;&#x7136;&#x6392;&#x5E8F;&#x7684;&#x539F;&#x7406;&#x548C;&#x56FE;&#x89E3;">17.11_&#x96C6;&#x5408;&#x6846;&#x67B6;(TreeSet&#x4FDD;&#x8BC1;&#x5143;&#x7D20;&#x552F;&#x4E00;&#x548C;&#x81EA;&#x7136;&#x6392;&#x5E8F;&#x7684;&#x539F;&#x7406;&#x548C;&#x56FE;&#x89E3;)</h3>
+<ul>
+<li>A:&#x753B;&#x56FE;&#x6F14;&#x793A;<ul>
+<li>TreeSet&#x4FDD;&#x8BC1;&#x5143;&#x7D20;&#x552F;&#x4E00;&#x548C;&#x81EA;&#x7136;&#x6392;&#x5E8F;&#x7684;&#x539F;&#x7406;&#x548C;&#x56FE;&#x89E3;</li>
+</ul>
+</li>
+</ul>
+<h3 id="1712&#x96C6;&#x5408;&#x6846;&#x67B6;treeset&#x5B58;&#x50A8;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x5E76;&#x904D;&#x5386;&#x7EC3;&#x4E60;1">17.12_&#x96C6;&#x5408;&#x6846;&#x67B6;(TreeSet&#x5B58;&#x50A8;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x5E76;&#x904D;&#x5386;&#x7EC3;&#x4E60;1)</h3>
+<ul>
+<li>A:&#x6848;&#x4F8B;&#x6F14;&#x793A;<ul>
+<li>TreeSet&#x5B58;&#x50A8;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x5E76;&#x904D;&#x5386;&#x7EC3;&#x4E60;1(&#x6309;&#x7167;&#x59D3;&#x540D;&#x6392;&#x5E8F;)</li>
+</ul>
+</li>
+</ul>
+<h3 id="1713&#x96C6;&#x5408;&#x6846;&#x67B6;treeset&#x5B58;&#x50A8;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x5E76;&#x904D;&#x5386;&#x7EC3;&#x4E60;2">17.13_&#x96C6;&#x5408;&#x6846;&#x67B6;(TreeSet&#x5B58;&#x50A8;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x5E76;&#x904D;&#x5386;&#x7EC3;&#x4E60;2)</h3>
+<ul>
+<li>A:&#x6848;&#x4F8B;&#x6F14;&#x793A;<ul>
+<li>TreeSet&#x5B58;&#x50A8;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x5E76;&#x904D;&#x5386;&#x7EC3;&#x4E60;2(&#x6309;&#x7167;&#x59D3;&#x540D;&#x7684;&#x957F;&#x5EA6;&#x6392;&#x5E8F;)</li>
+</ul>
+</li>
+</ul>
+<h3 id="1714&#x96C6;&#x5408;&#x6846;&#x67B6;treeset&#x4FDD;&#x8BC1;&#x5143;&#x7D20;&#x552F;&#x4E00;&#x548C;&#x6BD4;&#x8F83;&#x5668;&#x6392;&#x5E8F;&#x7684;&#x539F;&#x7406;&#x53CA;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;">17.14_&#x96C6;&#x5408;&#x6846;&#x67B6;(TreeSet&#x4FDD;&#x8BC1;&#x5143;&#x7D20;&#x552F;&#x4E00;&#x548C;&#x6BD4;&#x8F83;&#x5668;&#x6392;&#x5E8F;&#x7684;&#x539F;&#x7406;&#x53CA;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;)</h3>
+<ul>
+<li>A:&#x6848;&#x4F8B;&#x6F14;&#x793A;<ul>
+<li>TreeSet&#x4FDD;&#x8BC1;&#x5143;&#x7D20;&#x552F;&#x4E00;&#x548C;&#x6BD4;&#x8F83;&#x5668;&#x6392;&#x5E8F;&#x7684;&#x539F;&#x7406;&#x53CA;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</li>
+</ul>
+</li>
+</ul>
+<h3 id="1715&#x96C6;&#x5408;&#x6846;&#x67B6;treeset&#x539F;&#x7406;">17.15_&#x96C6;&#x5408;&#x6846;&#x67B6;(TreeSet&#x539F;&#x7406;)</h3>
+<ul>
+<li>1.&#x7279;&#x70B9;<ul>
+<li>TreeSet&#x662F;&#x7528;&#x6765;&#x6392;&#x5E8F;&#x7684;, &#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x987A;&#x5E8F;, &#x5BF9;&#x8C61;&#x5B58;&#x5165;&#x4E4B;&#x540E;&#x4F1A;&#x6309;&#x7167;&#x6307;&#x5B9A;&#x7684;&#x987A;&#x5E8F;&#x6392;&#x5217;</li>
+</ul>
+</li>
+<li>2.&#x4F7F;&#x7528;&#x65B9;&#x5F0F;<ul>
+<li>a.&#x81EA;&#x7136;&#x987A;&#x5E8F;(Comparable)<ul>
+<li>TreeSet&#x7C7B;&#x7684;add()&#x65B9;&#x6CD5;&#x4E2D;&#x4F1A;&#x628A;&#x5B58;&#x5165;&#x7684;&#x5BF9;&#x8C61;&#x63D0;&#x5347;&#x4E3A;Comparable&#x7C7B;&#x578B;</li>
+<li>&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684;compareTo()&#x65B9;&#x6CD5;&#x548C;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x6BD4;&#x8F83;</li>
+<li>&#x6839;&#x636E;compareTo()&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x5B58;&#x50A8;</li>
+</ul>
+</li>
+<li>b.&#x6BD4;&#x8F83;&#x5668;&#x987A;&#x5E8F;(Comparator)<ul>
+<li>&#x521B;&#x5EFA;TreeSet&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x5236;&#x5B9A; &#x4E00;&#x4E2A;Comparator</li>
+<li>&#x5982;&#x679C;&#x4F20;&#x5165;&#x4E86;Comparator&#x7684;&#x5B50;&#x7C7B;&#x5BF9;&#x8C61;, &#x90A3;&#x4E48;TreeSet&#x5C31;&#x4F1A;&#x6309;&#x7167;&#x6BD4;&#x8F83;&#x5668;&#x4E2D;&#x7684;&#x987A;&#x5E8F;&#x6392;&#x5E8F;</li>
+<li>add()&#x65B9;&#x6CD5;&#x5185;&#x90E8;&#x4F1A;&#x81EA;&#x52A8;&#x8C03;&#x7528;Comparator&#x63A5;&#x53E3;&#x4E2D;compare()&#x65B9;&#x6CD5;&#x6392;&#x5E8F;</li>
+<li>&#x8C03;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#x662F;compare&#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;,&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x662F;compare&#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;</li>
+</ul>
+</li>
+<li>c.&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x7684;&#x533A;&#x522B;<ul>
+<li>TreeSet&#x6784;&#x9020;&#x51FD;&#x6570;&#x4EC0;&#x4E48;&#x90FD;&#x4E0D;&#x4F20;, &#x9ED8;&#x8BA4;&#x6309;&#x7167;&#x7C7B;&#x4E2D;Comparable&#x7684;&#x987A;&#x5E8F;(&#x6CA1;&#x6709;&#x5C31;&#x62A5;&#x9519;ClassCastException)</li>
+<li>TreeSet&#x5982;&#x679C;&#x4F20;&#x5165;Comparator, &#x5C31;&#x4F18;&#x5148;&#x6309;&#x7167;Comparator</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="1716&#x96C6;&#x5408;&#x6846;&#x67B6;&#x7EC3;&#x4E60;">17.16_&#x96C6;&#x5408;&#x6846;&#x67B6;(&#x7EC3;&#x4E60;)</h3>
+<ul>
+<li><p>&#x5728;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#x4E2D;&#x5B58;&#x50A8;&#x4E86;&#x65E0;&#x5E8F;&#x5E76;&#x4E14;&#x91CD;&#x590D;&#x7684;&#x5B57;&#x7B26;&#x4E32;,&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;,&#x8BA9;&#x5176;&#x6709;&#x5E8F;(&#x5B57;&#x5178;&#x987A;&#x5E8F;),&#x800C;&#x4E14;&#x8FD8;&#x4E0D;&#x80FD;&#x53BB;&#x9664;&#x91CD;&#x590D;</p>
+<pre><code>      public static void main(String[] args) {
+</code></pre><p>  &#x200B;            ArrayList<string> list = new ArrayList&lt;&gt;();
+  &#x200B;            list.add(&quot;ccc&quot;);
+  &#x200B;            list.add(&quot;ccc&quot;);
+  &#x200B;            list.add(&quot;aaa&quot;);
+  &#x200B;            list.add(&quot;aaa&quot;);
+  &#x200B;            list.add(&quot;bbb&quot;);
+  &#x200B;            list.add(&quot;ddd&quot;);
+  &#x200B;            list.add(&quot;ddd&quot;);
+  &#x200B;            </string></p>
+<pre><code>          sort(list);
+          System.out.println(list);
+      }
+
+      /*
+       * &#x5BF9;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x6392;&#x5E8F;,&#x5E76;&#x4FDD;&#x7559;&#x91CD;&#x590D;
+       * 1,void
+       * 2,List&lt;String&gt; list
+       */
+      public static void sort(List&lt;String&gt; list) {
+          TreeSet&lt;String&gt; ts = new TreeSet&lt;&gt;(new Comparator&lt;String&gt;() {        //&#x5B9A;&#x4E49;&#x6BD4;&#x8F83;&#x5668;(new Comparator(){}&#x662F;Comparator&#x7684;&#x5B50;&#x7C7B;&#x5BF9;&#x8C61;)
+
+              @Override
+              public int compare(String s1, String s2) {                        //&#x91CD;&#x5199;compare&#x65B9;&#x6CD5;
+                  int num = s1.compareTo(s2);                                    //&#x6BD4;&#x8F83;&#x5185;&#x5BB9;
+                  return num == 0 ? 1 : num;                                    //&#x5982;&#x679C;&#x5185;&#x5BB9;&#x4E00;&#x6837;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4E0D;&#x4E3A;0&#x7684;&#x6570;&#x5B57;&#x5373;&#x53EF;
+              }
+          });
+
+          ts.addAll(list);                                                    //&#x5C06;list&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x5230;ts&#x4E2D;
+          list.clear();                                                        //&#x6E05;&#x7A7A;list
+          list.addAll(ts);                                                    //&#x5C06;ts&#x4E2D;&#x6392;&#x5E8F;&#x5E76;&#x4FDD;&#x7559;&#x91CD;&#x590D;&#x7684;&#x7ED3;&#x679C;&#x5728;&#x6DFB;&#x52A0;&#x5230;list&#x4E2D;
+      }
+</code></pre></li>
+</ul>
+<h3 id="1717&#x96C6;&#x5408;&#x6846;&#x67B6;&#x7EC3;&#x4E60;">17.17_&#x96C6;&#x5408;&#x6846;&#x67B6;(&#x7EC3;&#x4E60;)</h3>
+<ul>
+<li><p>&#x4ECE;&#x952E;&#x76D8;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;, &#x7A0B;&#x5E8F;&#x5BF9;&#x5176;&#x4E2D;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x8FDB;&#x884C;&#x6392;&#x5E8F;,&#x4F8B;&#x5982;&#x952E;&#x76D8;&#x8F93;&#x5165;: helloitcast&#x7A0B;&#x5E8F;&#x6253;&#x5370;:acehillostt</p>
+<pre><code>  Scanner sc = new Scanner(System.in);            //&#x521B;&#x5EFA;&#x952E;&#x76D8;&#x5F55;&#x5165;&#x5BF9;&#x8C61;
+</code></pre><p>  &#x200B;    System.out.println(&quot;&#x8BF7;&#x8F93;&#x5165;&#x4E00;&#x884C;&#x5B57;&#x7B26;&#x4E32;:&quot;);
+  &#x200B;    String line = sc.nextLine();                    //&#x5C06;&#x952E;&#x76D8;&#x5F55;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5B58;&#x50A8;&#x5728;line&#x4E2D;
+  &#x200B;    char[] arr = line.toCharArray();                //&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x5B57;&#x7B26;&#x6570;&#x7EC4;
+  &#x200B;    TreeSet<character> ts = new TreeSet&lt;&gt;(new Comparator<character>() {</character></character></p>
+<pre><code>      @Override
+      public int compare(Character c1, Character c2) {
+          //int num = c1.compareTo(c2);
+          int num = c1 - c2;                    //&#x81EA;&#x52A8;&#x62C6;&#x7BB1;
+          return num == 0 ? 1 : num;
+      }
+  });
+
+  for(char c : arr) {
+      ts.add(c);
+  }
+
+  for(Character ch : ts) {
+      System.out.print(ch);
+  }
+</code></pre><h3 id="1718&#x96C6;&#x5408;&#x6846;&#x67B6;&#x7EC3;&#x4E60;">17.18_&#x96C6;&#x5408;&#x6846;&#x67B6;(&#x7EC3;&#x4E60;)</h3>
+</li>
+<li><p>&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x540E;, &#x53EF;&#x4EE5;&#x4ECE;&#x952E;&#x76D8;&#x8F93;&#x5165;&#x63A5;&#x6536;&#x591A;&#x4E2A;&#x6574;&#x6570;, &#x76F4;&#x5230;&#x8F93;&#x5165;quit&#x65F6;&#x7ED3;&#x675F;&#x8F93;&#x5165;. &#x628A;&#x6240;&#x6709;&#x8F93;&#x5165;&#x7684;&#x6574;&#x6570;&#x5012;&#x5E8F;&#x6392;&#x5217;&#x6253;&#x5370;.</p>
+<pre><code>      Scanner sc = new Scanner(System.in);        //&#x521B;&#x5EFA;&#x952E;&#x76D8;&#x5F55;&#x5165;&#x5BF9;&#x8C61;
+</code></pre><p>  &#x200B;        System.out.println(&quot;&#x8BF7;&#x8F93;&#x5165;:&quot;);
+  &#x200B;        TreeSet<integer> ts = new TreeSet&lt;&gt;(new Comparator<integer>() {//&#x5C06;&#x6BD4;&#x8F83;&#x5668;&#x4F20;&#x7ED9;TreeSet&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;</integer></integer></p>
+<pre><code>          @Override
+          public int compare(Integer i1, Integer i2) {
+              //int num = i2 - i1;                    //&#x81EA;&#x52A8;&#x62C6;&#x7BB1;
+              int num = i2.compareTo(i1);
+              return num == 0 ? 1 : num;
+          }
+      });
+
+      while(true) {
+          String line = sc.nextLine();            //&#x5C06;&#x952E;&#x76D8;&#x5F55;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5B58;&#x50A8;&#x5728;line&#x4E2D;
+          if(&quot;quit&quot;.equals(line))                    //&#x5982;&#x679C;&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;&#x548C;&#x53D8;&#x91CF;&#x6BD4;&#x8F83;,&#x5E38;&#x91CF;&#x653E;&#x524D;&#x9762;,&#x8FD9;&#x6837;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x7A7A;&#x6307;&#x9488;&#x5F02;&#x5E38;,&#x53D8;&#x91CF;&#x91CC;&#x9762;&#x53EF;&#x80FD;&#x5B58;&#x50A8;null
+              break;
+          try {
+              int num = Integer.parseInt(line);        //&#x5C06;&#x6570;&#x5B57;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x6570;&#x5B57;
+              ts.add(num);
+          } catch (Exception e) {
+              System.out.println(&quot;&#x60A8;&#x5F55;&#x5165;&#x7684;&#x6570;&#x636E;&#x6709;&#x8BEF;,&#x8BF7;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x6574;&#x6570;&quot;);
+          }
+
+      }
+
+      for (Integer i : ts) {                        //&#x904D;&#x5386;TreeSet&#x96C6;&#x5408;
+          System.out.println(i);
+      }
+</code></pre><h3 id="1719&#x96C6;&#x5408;&#x6846;&#x67B6;&#x952E;&#x76D8;&#x5F55;&#x5165;&#x5B66;&#x751F;&#x4FE1;&#x606F;&#x6309;&#x7167;&#x603B;&#x5206;&#x6392;&#x5E8F;&#x540E;&#x8F93;&#x51FA;&#x5728;&#x63A7;&#x5236;&#x53F0;">17.19_&#x96C6;&#x5408;&#x6846;&#x67B6;(&#x952E;&#x76D8;&#x5F55;&#x5165;&#x5B66;&#x751F;&#x4FE1;&#x606F;&#x6309;&#x7167;&#x603B;&#x5206;&#x6392;&#x5E8F;&#x540E;&#x8F93;&#x51FA;&#x5728;&#x63A7;&#x5236;&#x53F0;)</h3>
+</li>
+<li><p>A:&#x6848;&#x4F8B;&#x6F14;&#x793A;</p>
+<ul>
+<li><p>&#x9700;&#x6C42;&#xFF1A;&#x952E;&#x76D8;&#x5F55;&#x5165;5&#x4E2A;&#x5B66;&#x751F;&#x4FE1;&#x606F;(&#x59D3;&#x540D;,&#x8BED;&#x6587;&#x6210;&#x7EE9;,&#x6570;&#x5B66;&#x6210;&#x7EE9;,&#x82F1;&#x8BED;&#x6210;&#x7EE9;),&#x6309;&#x7167;&#x603B;&#x5206;&#x4ECE;&#x9AD8;&#x5230;&#x4F4E;&#x8F93;&#x51FA;&#x5230;&#x63A7;&#x5236;&#x53F0;&#x3002;</p>
+<pre><code>  Scanner sc = new Scanner(System.in);
+</code></pre><p>  &#x200B;    System.out.println(&quot;&#x8BF7;&#x8F93;&#x5165;5&#x4E2A;&#x5B66;&#x751F;&#x6210;&#x7EE9;&#x683C;&#x5F0F;&#x662F;:(&#x59D3;&#x540D;,&#x8BED;&#x6587;&#x6210;&#x7EE9;,&#x6570;&#x5B66;&#x6210;&#x7EE9;,&#x82F1;&#x8BED;&#x6210;&#x7EE9;)&quot;);
+  &#x200B;    TreeSet<student> ts = new TreeSet&lt;&gt;(new Comparator<student>() {
+  &#x200B;        @Override
+  &#x200B;        public int compare(Student s1, Student s2) {
+  &#x200B;            int num = s2.getSum() - s1.getSum();            //&#x6839;&#x636E;&#x5B66;&#x751F;&#x7684;&#x603B;&#x6210;&#x7EE9;&#x964D;&#x5E8F;&#x6392;&#x5217;
+  &#x200B;            return num == 0 ? 1 : num;
+  &#x200B;        }
+  &#x200B;    });
+  &#x200B;    </student></student></p>
+<pre><code>  while(ts.size() &lt; 5) {
+      String line = sc.nextLine();
+      try {
+          String[] arr = line.split(&quot;,&quot;);
+          int chinese = Integer.parseInt(arr[1]);                //&#x8F6C;&#x6362;&#x8BED;&#x6587;&#x6210;&#x7EE9;
+          int math = Integer.parseInt(arr[2]);                //&#x8F6C;&#x6362;&#x6570;&#x5B66;&#x6210;&#x7EE9;
+          int english = Integer.parseInt(arr[3]);                //&#x8F6C;&#x6362;&#x82F1;&#x8BED;&#x6210;&#x7EE9;
+          ts.add(new Student(arr[0], chinese, math, english));
+      } catch (Exception e) {
+          System.out.println(&quot;&#x5F55;&#x5165;&#x683C;&#x5F0F;&#x6709;&#x8BEF;,&#x8F93;&#x5165;5&#x4E2A;&#x5B66;&#x751F;&#x6210;&#x7EE9;&#x683C;&#x5F0F;&#x662F;:(&#x59D3;&#x540D;,&#x8BED;&#x6587;&#x6210;&#x7EE9;,&#x6570;&#x5B66;&#x6210;&#x7EE9;,&#x82F1;&#x8BED;&#x6210;&#x7EE9;&quot;);
+      }
+
+  }
+
+  System.out.println(&quot;&#x6392;&#x5E8F;&#x540E;&#x7684;&#x5B66;&#x751F;&#x6210;&#x7EE9;&#x662F;:&quot;);
+  for (Student s : ts) {
+      System.out.println(s);
+  }
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h3 id="1720day17&#x603B;&#x7ED3;">17.20_day17&#x603B;&#x7ED3;</h3>
+<ul>
+<li>1.List<ul>
+<li>a.&#x666E;&#x901A;for&#x5FAA;&#x73AF;, &#x4F7F;&#x7528;get()&#x9010;&#x4E2A;&#x83B7;&#x53D6;</li>
+<li>b.&#x8C03;&#x7528;iterator()&#x65B9;&#x6CD5;&#x5F97;&#x5230;Iterator, &#x4F7F;&#x7528;hasNext()&#x548C;next()&#x65B9;&#x6CD5;</li>
+<li>c.&#x589E;&#x5F3A;for&#x5FAA;&#x73AF;, &#x53EA;&#x8981;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Iterator&#x7684;&#x7C7B;&#x90FD;&#x53EF;&#x4EE5;&#x7528;</li>
+<li>d.Vector&#x96C6;&#x5408;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Enumeration&#x7684;hasMoreElements()&#x548C;nextElement()&#x65B9;&#x6CD5;</li>
+</ul>
+</li>
+<li>2.Set<ul>
+<li>a.&#x8C03;&#x7528;iterator()&#x65B9;&#x6CD5;&#x5F97;&#x5230;Iterator, &#x4F7F;&#x7528;hasNext()&#x548C;next()&#x65B9;&#x6CD5;</li>
+<li>b.&#x589E;&#x5F3A;for&#x5FAA;&#x73AF;, &#x53EA;&#x8981;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Iterator&#x7684;&#x7C7B;&#x90FD;&#x53EF;&#x4EE5;&#x7528;</li>
+</ul>
+</li>
+<li>3.&#x666E;&#x901A;for&#x5FAA;&#x73AF;,&#x8FED;&#x4EE3;&#x5668;,&#x589E;&#x5F3A;for&#x5FAA;&#x73AF;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x5728;&#x904D;&#x5386;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x5220;&#x9664; </li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="day16笔记.html" class="navigation navigation-prev " aria-label="Previous page: day16.集合框架(2)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="day18笔记.html" class="navigation navigation-next " aria-label="Next page: day18.集合框架(4)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"day17.集合框架(3)","level":"1.16","depth":1,"next":{"title":"day18.集合框架(4)","level":"1.17","depth":1,"path":"day18笔记.md","ref":"day18笔记.md","articles":[]},"previous":{"title":"day16.集合框架(2)","level":"1.15","depth":1,"path":"day16笔记.md","ref":"day16笔记.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"day17笔记.md","mtime":"2018-10-31T03:05:33.556Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-31T03:56:02.696Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

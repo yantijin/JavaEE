@@ -1,0 +1,971 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>day25.多线程(2) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="day26笔记.html" />
+    
+    
+    <link rel="prev" href="day24笔记.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="day01笔记.html">
+            
+                <a href="day01笔记.html">
+            
+                    
+                    day01.计算机基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="day02笔记.html">
+            
+                <a href="day02笔记.html">
+            
+                    
+                    day02.Java语言基础(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="day03笔记.html">
+            
+                <a href="day03笔记.html">
+            
+                    
+                    day03.Java语言基础(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="day04笔记.html">
+            
+                <a href="day04笔记.html">
+            
+                    
+                    day04.Java语言基础(3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="day05笔记.html">
+            
+                <a href="day05笔记.html">
+            
+                    
+                    day05.Java语言基础(4)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="day06笔记.html">
+            
+                <a href="day06笔记.html">
+            
+                    
+                    day06.面向对象(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="day07笔记.html">
+            
+                <a href="day07笔记.html">
+            
+                    
+                    day07.面向对象(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="day08笔记.html">
+            
+                <a href="day08笔记.html">
+            
+                    
+                    day08.面向对象(3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="day10笔记.html">
+            
+                <a href="day10笔记.html">
+            
+                    
+                    day10.面向对象(4)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="day11笔记.html">
+            
+                <a href="day11笔记.html">
+            
+                    
+                    day11.Java开发工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="day13笔记.html">
+            
+                <a href="day13笔记.html">
+            
+                    
+                    day13.常见对象(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="day14笔记.html">
+            
+                <a href="day14笔记.html">
+            
+                    
+                    day14.常见对象(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="day15笔记.html">
+            
+                <a href="day15笔记.html">
+            
+                    
+                    day15.集合框架(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="day16笔记.html">
+            
+                <a href="day16笔记.html">
+            
+                    
+                    day16.集合框架(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="day17笔记.html">
+            
+                <a href="day17笔记.html">
+            
+                    
+                    day17.集合框架(3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="day18笔记.html">
+            
+                <a href="day18笔记.html">
+            
+                    
+                    day18.集合框架(4)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="day19笔记.html">
+            
+                <a href="day19笔记.html">
+            
+                    
+                    day19.异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="day20笔记.html">
+            
+                <a href="day20笔记.html">
+            
+                    
+                    day20.IO流(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="day21笔记.html">
+            
+                <a href="day21笔记.html">
+            
+                    
+                    day21.IO流(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="day22笔记.html">
+            
+                <a href="day22笔记.html">
+            
+                    
+                    day22.IO流(3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="day23笔记.html">
+            
+                <a href="day23笔记.html">
+            
+                    
+                    day23.File类及递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="day24笔记.html">
+            
+                <a href="day24笔记.html">
+            
+                    
+                    day24.多线程(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.24" data-path="day25笔记.html">
+            
+                <a href="day25笔记.html">
+            
+                    
+                    day25.多线程(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="day26笔记.html">
+            
+                <a href="day26笔记.html">
+            
+                    
+                    day26.网络编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="day27笔记.html">
+            
+                <a href="day27笔记.html">
+            
+                    
+                    day27.反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >day25.多线程(2)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="day25&#x591A;&#x7EBF;&#x7A0B;2">day25.&#x591A;&#x7EBF;&#x7A0B;(2)</h1>
+<h3 id="2501&#x591A;&#x7EBF;&#x7A0B;&#x5355;&#x4F8B;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x638C;&#x63E1;">25.01_&#x591A;&#x7EBF;&#x7A0B;(&#x5355;&#x4F8B;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;)(&#x638C;&#x63E1;)</h3>
+<ul>
+<li><p>&#x5355;&#x4F8B;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF1A;&#x4FDD;&#x8BC1;&#x7C7B;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x4F55;&#x4FDD;&#x8BC1;&#x7C7B;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5462;&#xFF1F;</p>
+<ul>
+<li>(1)&#x63A7;&#x5236;&#x7C7B;&#x7684;&#x521B;&#x5EFA;&#xFF0C;&#x4E0D;&#x8BA9;&#x5176;&#x4ED6;&#x7C7B;&#x6765;&#x521B;&#x5EFA;&#x672C;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x3002;private</li>
+<li>(2)&#x5728;&#x672C;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x672C;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x3002;Singleton s;</li>
+<li>(3)&#x63D0;&#x4F9B;&#x516C;&#x5171;&#x7684;&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#x3002;  public static Singleton getInstance(){return s}</li>
+</ul>
+</li>
+<li>&#x5355;&#x4F8B;&#x5199;&#x6CD5;&#x4E24;&#x79CD;&#xFF1A;<ul>
+<li>(1)&#x997F;&#x6C49;&#x5F0F; &#x5F00;&#x53D1;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x3002;</li>
+<li><pre><code>  //&#x997F;&#x6C49;&#x5F0F;
+</code></pre>  &#x200B;    class Singleton {
+  &#x200B;        //1,&#x79C1;&#x6709;&#x6784;&#x9020;&#x51FD;&#x6570;
+  &#x200B;        private Singleton(){}
+  &#x200B;        //2,&#x521B;&#x5EFA;&#x672C;&#x7C7B;&#x5BF9;&#x8C61;
+  &#x200B;        private static Singleton s = new Singleton();
+  &#x200B;        //3,&#x5BF9;&#x5916;&#x63D0;&#x4F9B;&#x516C;&#x5171;&#x7684;&#x8BBF;&#x95EE;&#x65B9;&#x6CD5;
+  &#x200B;        public static Singleton getInstance() {
+  &#x200B;            return s;
+  &#x200B;        }
+  &#x200B;        <pre><code>      public static void print() {
+          System.out.println(&quot;11111111111&quot;);
+      }
+  }
+</code></pre></li>
+<li>(2)&#x61D2;&#x6C49;&#x5F0F; &#x9762;&#x8BD5;&#x5199;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x3002;&#x591A;&#x7EBF;&#x7A0B;&#x7684;&#x95EE;&#x9898;&#xFF1F;</li>
+<li><pre><code>  //&#x61D2;&#x6C49;&#x5F0F;,&#x5355;&#x4F8B;&#x7684;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x6A21;&#x5F0F;
+</code></pre>  &#x200B;    class Singleton {
+  &#x200B;        //1,&#x79C1;&#x6709;&#x6784;&#x9020;&#x51FD;&#x6570;
+  &#x200B;        private Singleton(){}
+  &#x200B;        //2,&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x672C;&#x7C7B;&#x7684;&#x5F15;&#x7528;
+  &#x200B;        private static Singleton s;
+  &#x200B;        //3,&#x5BF9;&#x5916;&#x63D0;&#x4F9B;&#x516C;&#x5171;&#x7684;&#x8BBF;&#x95EE;&#x65B9;&#x6CD5;
+  &#x200B;        public static Singleton getInstance() {
+  &#x200B;            if(s == null)
+  &#x200B;                //&#x7EBF;&#x7A0B;1,&#x7EBF;&#x7A0B;2
+  &#x200B;                s = new Singleton();
+  &#x200B;            return s;
+  &#x200B;        }
+  &#x200B;        <pre><code>      public static void print() {
+          System.out.println(&quot;11111111111&quot;);
+      }
+  }
+</code></pre></li>
+<li>(3)&#x7B2C;&#x4E09;&#x79CD;&#x683C;&#x5F0F;</li>
+<li><pre><code>  class Singleton {
+</code></pre>  &#x200B;        private Singleton() {}
+  &#x200B;    <pre><code>      public static final Singleton s = new Singleton();//final&#x662F;&#x6700;&#x7EC8;&#x7684;&#x610F;&#x601D;,&#x88AB;final&#x4FEE;&#x9970;&#x7684;&#x53D8;&#x91CF;&#x4E0D;&#x53EF;&#x4EE5;&#x88AB;&#x66F4;&#x6539;
+  }
+</code></pre><h3 id="2502&#x591A;&#x7EBF;&#x7A0B;runtime&#x7C7B;">25.02_&#x591A;&#x7EBF;&#x7A0B;(Runtime&#x7C7B;)</h3>
+</li>
+</ul>
+</li>
+<li>Runtime&#x7C7B;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x4F8B;&#x7C7B;<ul>
+<li><pre><code>  Runtime r = Runtime.getRuntime();
+</code></pre>  &#x200B;    //r.exec(&quot;shutdown -s -t 300&quot;);        //300&#x79D2;&#x540E;&#x5173;&#x673A;
+  &#x200B;    r.exec(&quot;shutdown -a&quot;);                //&#x53D6;&#x6D88;&#x5173;&#x673A;</li>
+</ul>
+</li>
+</ul>
+<h3 id="2503&#x591A;&#x7EBF;&#x7A0B;timer&#x638C;&#x63E1;">25.03_&#x591A;&#x7EBF;&#x7A0B;(Timer)(&#x638C;&#x63E1;)</h3>
+<ul>
+<li><p>Timer&#x7C7B;:&#x8BA1;&#x65F6;&#x5668;</p>
+<pre><code>      public class Demo5_Timer {
+</code></pre><p>  &#x200B;            /<em>*
+  &#x200B;             </em> @param args
+  &#x200B;             <em> &#x8BA1;&#x65F6;&#x5668;
+  &#x200B;             </em> @throws InterruptedException 
+  &#x200B;             */
+  &#x200B;            public static void main(String[] args) throws InterruptedException {
+  &#x200B;                Timer t = new Timer();
+  &#x200B;                t.schedule(new MyTimerTask(), new Date(114,9,15,10,54,20),3000);
+  &#x200B;                </p>
+<pre><code>              while(true) {
+                  System.out.println(new Date());
+                  Thread.sleep(1000);
+              }
+          }
+      }
+      class MyTimerTask extends TimerTask {
+          @Override
+          public void run() {
+              System.out.println(&quot;&#x8D77;&#x5E8A;&#x80CC;&#x82F1;&#x8BED;&#x5355;&#x8BCD;&quot;);
+          }
+
+      }
+</code></pre></li>
+</ul>
+<h3 id="2504&#x591A;&#x7EBF;&#x7A0B;&#x4E24;&#x4E2A;&#x7EBF;&#x7A0B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x638C;&#x63E1;">25.04_&#x591A;&#x7EBF;&#x7A0B;(&#x4E24;&#x4E2A;&#x7EBF;&#x7A0B;&#x95F4;&#x7684;&#x901A;&#x4FE1;)(&#x638C;&#x63E1;)</h3>
+<ul>
+<li>1.&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x9700;&#x8981;&#x901A;&#x4FE1;<ul>
+<li>&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x5E76;&#x53D1;&#x6267;&#x884C;&#x65F6;, &#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;CPU&#x662F;&#x968F;&#x673A;&#x5207;&#x6362;&#x7EBF;&#x7A0B;&#x7684;</li>
+<li>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x4ED6;&#x4EEC;&#x6709;&#x89C4;&#x5F8B;&#x7684;&#x6267;&#x884C;, &#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x901A;&#x4FE1;, &#x4F8B;&#x5982;&#x6BCF;&#x4E2A;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x6253;&#x5370;</li>
+</ul>
+</li>
+<li>2.&#x600E;&#x4E48;&#x901A;&#x4FE1;<ul>
+<li>&#x5982;&#x679C;&#x5E0C;&#x671B;&#x7EBF;&#x7A0B;&#x7B49;&#x5F85;, &#x5C31;&#x8C03;&#x7528;wait()</li>
+<li>&#x5982;&#x679C;&#x5E0C;&#x671B;&#x5524;&#x9192;&#x7B49;&#x5F85;&#x7684;&#x7EBF;&#x7A0B;, &#x5C31;&#x8C03;&#x7528;notify();</li>
+<li>&#x8FD9;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x5FC5;&#x987B;&#x5728;&#x540C;&#x6B65;&#x4EE3;&#x7801;&#x4E2D;&#x6267;&#x884C;, &#x5E76;&#x4E14;&#x4F7F;&#x7528;&#x540C;&#x6B65;&#x9501;&#x5BF9;&#x8C61;&#x6765;&#x8C03;&#x7528;</li>
+</ul>
+</li>
+</ul>
+<h3 id="2505&#x591A;&#x7EBF;&#x7A0B;&#x4E09;&#x4E2A;&#x6216;&#x4E09;&#x4E2A;&#x4EE5;&#x4E0A;&#x95F4;&#x7684;&#x7EBF;&#x7A0B;&#x901A;&#x4FE1;">25.05_&#x591A;&#x7EBF;&#x7A0B;(&#x4E09;&#x4E2A;&#x6216;&#x4E09;&#x4E2A;&#x4EE5;&#x4E0A;&#x95F4;&#x7684;&#x7EBF;&#x7A0B;&#x901A;&#x4FE1;)</h3>
+<ul>
+<li>&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x901A;&#x4FE1;&#x7684;&#x95EE;&#x9898;<ul>
+<li>notify()&#x65B9;&#x6CD5;&#x662F;&#x968F;&#x673A;&#x5524;&#x9192;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;</li>
+<li>notifyAll()&#x65B9;&#x6CD5;&#x662F;&#x5524;&#x9192;&#x6240;&#x6709;&#x7EBF;&#x7A0B;</li>
+<li>JDK5&#x4E4B;&#x524D;&#x65E0;&#x6CD5;&#x5524;&#x9192;&#x6307;&#x5B9A;&#x7684;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;</li>
+<li>&#x5982;&#x679C;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x901A;&#x4FE1;, &#x9700;&#x8981;&#x4F7F;&#x7528;notifyAll()&#x901A;&#x77E5;&#x6240;&#x6709;&#x7EBF;&#x7A0B;, &#x7528;while&#x6765;&#x53CD;&#x590D;&#x5224;&#x65AD;&#x6761;&#x4EF6;<h3 id="2506&#x591A;&#x7EBF;&#x7A0B;jdk15&#x7684;&#x65B0;&#x7279;&#x6027;&#x4E92;&#x65A5;&#x9501;&#x638C;&#x63E1;">25.06_&#x591A;&#x7EBF;&#x7A0B;(JDK1.5&#x7684;&#x65B0;&#x7279;&#x6027;&#x4E92;&#x65A5;&#x9501;)(&#x638C;&#x63E1;)</h3>
+</li>
+</ul>
+</li>
+<li>1.&#x540C;&#x6B65;<ul>
+<li>&#x4F7F;&#x7528;ReentrantLock&#x7C7B;&#x7684;lock()&#x548C;unlock()&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x540C;&#x6B65;</li>
+</ul>
+</li>
+<li>2.&#x901A;&#x4FE1;<ul>
+<li>&#x4F7F;&#x7528;ReentrantLock&#x7C7B;&#x7684;newCondition()&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;Condition&#x5BF9;&#x8C61;</li>
+<li>&#x9700;&#x8981;&#x7B49;&#x5F85;&#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528;Condition&#x7684;await()&#x65B9;&#x6CD5;, &#x5524;&#x9192;&#x7684;&#x65F6;&#x5019;&#x7528;signal()&#x65B9;&#x6CD5;</li>
+<li>&#x4E0D;&#x540C;&#x7684;&#x7EBF;&#x7A0B;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;Condition, &#x8FD9;&#x6837;&#x5C31;&#x80FD;&#x533A;&#x5206;&#x5524;&#x9192;&#x7684;&#x65F6;&#x5019;&#x627E;&#x54EA;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E86;</li>
+</ul>
+</li>
+</ul>
+<h3 id="2507&#x591A;&#x7EBF;&#x7A0B;&#x7EBF;&#x7A0B;&#x7EC4;&#x7684;&#x6982;&#x8FF0;&#x548C;&#x4F7F;&#x7528;&#x4E86;&#x89E3;">25.07_&#x591A;&#x7EBF;&#x7A0B;(&#x7EBF;&#x7A0B;&#x7EC4;&#x7684;&#x6982;&#x8FF0;&#x548C;&#x4F7F;&#x7528;)(&#x4E86;&#x89E3;)</h3>
+<ul>
+<li>A:&#x7EBF;&#x7A0B;&#x7EC4;&#x6982;&#x8FF0;<ul>
+<li>Java&#x4E2D;&#x4F7F;&#x7528;ThreadGroup&#x6765;&#x8868;&#x793A;&#x7EBF;&#x7A0B;&#x7EC4;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x5BF9;&#x4E00;&#x6279;&#x7EBF;&#x7A0B;&#x8FDB;&#x884C;&#x5206;&#x7C7B;&#x7BA1;&#x7406;&#xFF0C;Java&#x5141;&#x8BB8;&#x7A0B;&#x5E8F;&#x76F4;&#x63A5;&#x5BF9;&#x7EBF;&#x7A0B;&#x7EC4;&#x8FDB;&#x884C;&#x63A7;&#x5236;&#x3002;</li>
+<li>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x7EBF;&#x7A0B;&#x90FD;&#x5C5E;&#x4E8E;&#x4E3B;&#x7EBF;&#x7A0B;&#x7EC4;&#x3002;<ul>
+<li>public final ThreadGroup getThreadGroup()//&#x901A;&#x8FC7;&#x7EBF;&#x7A0B;&#x5BF9;&#x8C61;&#x83B7;&#x53D6;&#x4ED6;&#x6240;&#x5C5E;&#x4E8E;&#x7684;&#x7EC4;</li>
+<li>public final String getName()//&#x901A;&#x8FC7;&#x7EBF;&#x7A0B;&#x7EC4;&#x5BF9;&#x8C61;&#x83B7;&#x53D6;&#x4ED6;&#x7EC4;&#x7684;&#x540D;&#x5B57;</li>
+</ul>
+</li>
+<li>&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x7ED9;&#x7EBF;&#x7A0B;&#x8BBE;&#x7F6E;&#x5206;&#x7EC4;<ul>
+<li>1,ThreadGroup(String name) &#x521B;&#x5EFA;&#x7EBF;&#x7A0B;&#x7EC4;&#x5BF9;&#x8C61;&#x5E76;&#x7ED9;&#x5176;&#x8D4B;&#x503C;&#x540D;&#x5B57;</li>
+<li>2,&#x521B;&#x5EFA;&#x7EBF;&#x7A0B;&#x5BF9;&#x8C61;</li>
+<li>3,Thread(ThreadGroup?group, Runnable?target, String?name) </li>
+<li>4,&#x8BBE;&#x7F6E;&#x6574;&#x7EC4;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#x6216;&#x8005;&#x5B88;&#x62A4;&#x7EBF;&#x7A0B;</li>
+</ul>
+</li>
+<li>B:&#x6848;&#x4F8B;&#x6F14;&#x793A;<ul>
+<li>&#x7EBF;&#x7A0B;&#x7EC4;&#x7684;&#x4F7F;&#x7528;,&#x9ED8;&#x8BA4;&#x662F;&#x4E3B;&#x7EBF;&#x7A0B;&#x7EC4;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><pre><code>  MyRunnable mr = new MyRunnable();
+</code></pre><p>  &#x200B;    Thread t1 = new Thread(mr, &quot;&#x5F20;&#x4E09;&quot;);
+  &#x200B;    Thread t2 = new Thread(mr, &quot;&#x674E;&#x56DB;&quot;);
+  &#x200B;    //&#x83B7;&#x53D6;&#x7EBF;&#x7A0B;&#x7EC4;
+  &#x200B;    // &#x7EBF;&#x7A0B;&#x7C7B;&#x91CC;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;public final ThreadGroup getThreadGroup()
+  &#x200B;    ThreadGroup tg1 = t1.getThreadGroup();
+  &#x200B;    ThreadGroup tg2 = t2.getThreadGroup();
+  &#x200B;    // &#x7EBF;&#x7A0B;&#x7EC4;&#x91CC;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;public final String getName()
+  &#x200B;    String name1 = tg1.getName();
+  &#x200B;    String name2 = tg2.getName();
+  &#x200B;    System.out.println(name1);
+  &#x200B;    System.out.println(name2);
+  &#x200B;    // &#x901A;&#x8FC7;&#x7ED3;&#x679C;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x4E86;&#xFF1A;&#x7EBF;&#x7A0B;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x5C5E;&#x4E8E;main&#x7EBF;&#x7A0B;&#x7EC4;
+  &#x200B;    // &#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x6D4B;&#x8BD5;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x80FD;&#x591F;&#x770B;&#x5230;&#xFF0C;&#x9ED8;&#x4EFB;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x7EBF;&#x7A0B;&#x90FD;&#x5C5E;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x7EC4;
+  &#x200B;    System.out.println(Thread.currentThread().getThreadGroup().getName());</p>
+<ul>
+<li>&#x81EA;&#x5DF1;&#x8BBE;&#x5B9A;&#x7EBF;&#x7A0B;&#x7EC4;</li>
+</ul>
+</li>
+<li><p>// ThreadGroup(String name)
+ThreadGroup tg = new ThreadGroup(&quot;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7EC4;&quot;);</p>
+<p>MyRunnable mr = new MyRunnable();
+// Thread(ThreadGroup group, Runnable target, String name)
+Thread t1 = new Thread(tg, mr, &quot;&#x5F20;&#x4E09;&quot;);
+Thread t2 = new Thread(tg, mr, &quot;&#x674E;&#x56DB;&quot;);</p>
+<p>System.out.println(t1.getThreadGroup().getName());
+System.out.println(t2.getThreadGroup().getName());</p>
+<p>//&#x901A;&#x8FC7;&#x7EC4;&#x540D;&#x79F0;&#x8BBE;&#x7F6E;&#x540E;&#x53F0;&#x7EBF;&#x7A0B;&#xFF0C;&#x8868;&#x793A;&#x8BE5;&#x7EC4;&#x7684;&#x7EBF;&#x7A0B;&#x90FD;&#x662F;&#x540E;&#x53F0;&#x7EBF;&#x7A0B;
+tg.setDaemon(true);</p>
+<h3 id="2508&#x591A;&#x7EBF;&#x7A0B;&#x7EBF;&#x7A0B;&#x7684;&#x4E94;&#x79CD;&#x72B6;&#x6001;&#x638C;&#x63E1;">25.08_&#x591A;&#x7EBF;&#x7A0B;(&#x7EBF;&#x7A0B;&#x7684;&#x4E94;&#x79CD;&#x72B6;&#x6001;)(&#x638C;&#x63E1;)</h3>
+</li>
+<li>&#x770B;&#x56FE;&#x8BF4;&#x8BDD;</li>
+<li>&#x65B0;&#x5EFA;,&#x5C31;&#x7EEA;,&#x8FD0;&#x884C;,&#x963B;&#x585E;,&#x6B7B;&#x4EA1;</li>
+</ul>
+<h3 id="2509&#x591A;&#x7EBF;&#x7A0B;&#x7EBF;&#x7A0B;&#x6C60;&#x7684;&#x6982;&#x8FF0;&#x548C;&#x4F7F;&#x7528;&#x4E86;&#x89E3;">25.09_&#x591A;&#x7EBF;&#x7A0B;(&#x7EBF;&#x7A0B;&#x6C60;&#x7684;&#x6982;&#x8FF0;&#x548C;&#x4F7F;&#x7528;)(&#x4E86;&#x89E3;)</h3>
+<ul>
+<li><p>A:&#x7EBF;&#x7A0B;&#x6C60;&#x6982;&#x8FF0;</p>
+<ul>
+<li>&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x65B0;&#x7EBF;&#x7A0B;&#x6210;&#x672C;&#x662F;&#x6BD4;&#x8F83;&#x9AD8;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x6D89;&#x53CA;&#x5230;&#x8981;&#x4E0E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x3002;&#x800C;&#x4F7F;&#x7528;&#x7EBF;&#x7A0B;&#x6C60;&#x53EF;&#x4EE5;&#x5F88;&#x597D;&#x7684;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x5F53;&#x7A0B;&#x5E8F;&#x4E2D;&#x8981;&#x521B;&#x5EFA;&#x5927;&#x91CF;&#x751F;&#x5B58;&#x671F;&#x5F88;&#x77ED;&#x7684;&#x7EBF;&#x7A0B;&#x65F6;&#xFF0C;&#x66F4;&#x5E94;&#x8BE5;&#x8003;&#x8651;&#x4F7F;&#x7528;&#x7EBF;&#x7A0B;&#x6C60;&#x3002;&#x7EBF;&#x7A0B;&#x6C60;&#x91CC;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x4EE3;&#x7801;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x6B7B;&#x4EA1;&#xFF0C;&#x800C;&#x662F;&#x518D;&#x6B21;&#x56DE;&#x5230;&#x7EBF;&#x7A0B;&#x6C60;&#x4E2D;&#x6210;&#x4E3A;&#x7A7A;&#x95F2;&#x72B6;&#x6001;&#xFF0C;&#x7B49;&#x5F85;&#x4E0B;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6765;&#x4F7F;&#x7528;&#x3002;&#x5728;JDK5&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x624B;&#x52A8;&#x5B9E;&#x73B0;&#x81EA;&#x5DF1;&#x7684;&#x7EBF;&#x7A0B;&#x6C60;&#xFF0C;&#x4ECE;JDK5&#x5F00;&#x59CB;&#xFF0C;Java&#x5185;&#x7F6E;&#x652F;&#x6301;&#x7EBF;&#x7A0B;&#x6C60;</li>
+</ul>
+</li>
+<li>B:&#x5185;&#x7F6E;&#x7EBF;&#x7A0B;&#x6C60;&#x7684;&#x4F7F;&#x7528;&#x6982;&#x8FF0;<ul>
+<li>JDK5&#x65B0;&#x589E;&#x4E86;&#x4E00;&#x4E2A;Executors&#x5DE5;&#x5382;&#x7C7B;&#x6765;&#x4EA7;&#x751F;&#x7EBF;&#x7A0B;&#x6C60;&#xFF0C;&#x6709;&#x5982;&#x4E0B;&#x51E0;&#x4E2A;&#x65B9;&#x6CD5;<ul>
+<li>public static ExecutorService newFixedThreadPool(int nThreads)</li>
+<li>public static ExecutorService newSingleThreadExecutor()</li>
+<li>&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x662F;ExecutorService&#x5BF9;&#x8C61;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x6C60;&#xFF0C;&#x53EF;&#x4EE5;&#x6267;&#x884C;Runnable&#x5BF9;&#x8C61;&#x6216;&#x8005;Callable&#x5BF9;&#x8C61;&#x4EE3;&#x8868;&#x7684;&#x7EBF;&#x7A0B;&#x3002;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x5982;&#x4E0B;&#x65B9;&#x6CD5;</li>
+<li>Future&lt;?&gt; submit(Runnable task)</li>
+<li><t> Future<t> submit(Callable<t> task)</t></t></t></li>
+</ul>
+</li>
+<li>&#x4F7F;&#x7528;&#x6B65;&#x9AA4;&#xFF1A;<ul>
+<li>&#x521B;&#x5EFA;&#x7EBF;&#x7A0B;&#x6C60;&#x5BF9;&#x8C61;</li>
+<li>&#x521B;&#x5EFA;Runnable&#x5B9E;&#x4F8B;</li>
+<li>&#x63D0;&#x4EA4;Runnable&#x5B9E;&#x4F8B;</li>
+<li>&#x5173;&#x95ED;&#x7EBF;&#x7A0B;&#x6C60;</li>
+</ul>
+</li>
+<li>C:&#x6848;&#x4F8B;&#x6F14;&#x793A;<ul>
+<li>&#x63D0;&#x4EA4;&#x7684;&#x662F;Runnable</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><pre><code>  // public static ExecutorService newFixedThreadPool(int nThreads)
+</code></pre><p>  &#x200B;    ExecutorService pool = Executors.newFixedThreadPool(2);</p>
+<pre><code>  // &#x53EF;&#x4EE5;&#x6267;&#x884C;Runnable&#x5BF9;&#x8C61;&#x6216;&#x8005;Callable&#x5BF9;&#x8C61;&#x4EE3;&#x8868;&#x7684;&#x7EBF;&#x7A0B;
+  pool.submit(new MyRunnable());
+  pool.submit(new MyRunnable());
+
+  //&#x7ED3;&#x675F;&#x7EBF;&#x7A0B;&#x6C60;
+  pool.shutdown();
+</code></pre></li>
+</ul>
+<h3 id="2510&#x591A;&#x7EBF;&#x7A0B;&#x591A;&#x7EBF;&#x7A0B;&#x7A0B;&#x5E8F;&#x5B9E;&#x73B0;&#x7684;&#x65B9;&#x5F0F;3&#x4E86;&#x89E3;">25.10_&#x591A;&#x7EBF;&#x7A0B;(&#x591A;&#x7EBF;&#x7A0B;&#x7A0B;&#x5E8F;&#x5B9E;&#x73B0;&#x7684;&#x65B9;&#x5F0F;3)(&#x4E86;&#x89E3;)</h3>
+<ul>
+<li><p>&#x63D0;&#x4EA4;&#x7684;&#x662F;Callable</p>
+</li>
+<li><pre><code>  // &#x521B;&#x5EFA;&#x7EBF;&#x7A0B;&#x6C60;&#x5BF9;&#x8C61;
+</code></pre><p>  &#x200B;    ExecutorService pool = Executors.newFixedThreadPool(2);</p>
+<pre><code>  // &#x53EF;&#x4EE5;&#x6267;&#x884C;Runnable&#x5BF9;&#x8C61;&#x6216;&#x8005;Callable&#x5BF9;&#x8C61;&#x4EE3;&#x8868;&#x7684;&#x7EBF;&#x7A0B;
+  Future&lt;Integer&gt; f1 = pool.submit(new MyCallable(100));
+  Future&lt;Integer&gt; f2 = pool.submit(new MyCallable(200));
+
+  // V get()
+  Integer i1 = f1.get();
+  Integer i2 = f2.get();
+
+  System.out.println(i1);
+  System.out.println(i2);
+
+  // &#x7ED3;&#x675F;
+  pool.shutdown();
+
+  public class MyCallable implements Callable&lt;Integer&gt; {
+
+      private int number;
+
+      public MyCallable(int number) {
+          this.number = number;
+      }
+
+      @Override
+      public Integer call() throws Exception {
+          int sum = 0;
+          for (int x = 1; x &lt;= number; x++) {
+              sum += x;
+          }
+          return sum;
+      }
+
+  }
+</code></pre></li>
+<li><p>&#x591A;&#x7EBF;&#x7A0B;&#x7A0B;&#x5E8F;&#x5B9E;&#x73B0;&#x7684;&#x65B9;&#x5F0F;3&#x7684;&#x597D;&#x5904;&#x548C;&#x5F0A;&#x7AEF;</p>
+<ul>
+<li><p>&#x597D;&#x5904;&#xFF1A;</p>
+<ul>
+<li>&#x53EF;&#x4EE5;&#x6709;&#x8FD4;&#x56DE;&#x503C;</li>
+<li>&#x53EF;&#x4EE5;&#x629B;&#x51FA;&#x5F02;&#x5E38;</li>
+</ul>
+</li>
+<li><p>&#x5F0A;&#x7AEF;&#xFF1A;</p>
+<ul>
+<li>&#x4EE3;&#x7801;&#x6BD4;&#x8F83;&#x590D;&#x6742;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x822C;&#x4E0D;&#x7528;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="2511&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7B80;&#x5355;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#x6982;&#x8FF0;&#x548C;&#x4F7F;&#x7528;&#x4E86;&#x89E3;">25.11_&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;(&#x7B80;&#x5355;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#x6982;&#x8FF0;&#x548C;&#x4F7F;&#x7528;)(&#x4E86;&#x89E3;)</h3>
+<ul>
+<li><p>A:&#x7B80;&#x5355;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#x6982;&#x8FF0;</p>
+<ul>
+<li>&#x53C8;&#x53EB;&#x9759;&#x6001;&#x5DE5;&#x5382;&#x65B9;&#x6CD5;&#x6A21;&#x5F0F;&#xFF0C;&#x5B83;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x5DE5;&#x5382;&#x7C7B;&#x8D1F;&#x8D23;&#x521B;&#x5EFA;&#x4E00;&#x4E9B;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;</li>
+</ul>
+</li>
+<li><p>B:&#x4F18;&#x70B9;</p>
+<ul>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x8D1F;&#x8D23;&#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;&#xFF0C;&#x4ECE;&#x800C;&#x660E;&#x786E;&#x4E86;&#x5404;&#x4E2A;&#x7C7B;&#x7684;&#x804C;&#x8D23;</li>
+</ul>
+</li>
+<li><p>C:&#x7F3A;&#x70B9;</p>
+<ul>
+<li>&#x8FD9;&#x4E2A;&#x9759;&#x6001;&#x5DE5;&#x5382;&#x7C7B;&#x8D1F;&#x8D23;&#x6240;&#x6709;&#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x65B0;&#x7684;&#x5BF9;&#x8C61;&#x589E;&#x52A0;&#xFF0C;&#x6216;&#x8005;&#x67D0;&#x4E9B;&#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;&#x4E0D;&#x540C;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x4E0D;&#x65AD;&#x7684;&#x4FEE;&#x6539;&#x5DE5;&#x5382;&#x7C7B;&#xFF0C;&#x4E0D;&#x5229;&#x4E8E;&#x540E;&#x671F;&#x7684;&#x7EF4;&#x62A4;</li>
+</ul>
+</li>
+<li>D:&#x6848;&#x4F8B;&#x6F14;&#x793A;<ul>
+<li>&#x52A8;&#x7269;&#x62BD;&#x8C61;&#x7C7B;&#xFF1A;public abstract Animal { public abstract void eat(); }</li>
+<li>&#x5177;&#x4F53;&#x72D7;&#x7C7B;&#xFF1A;public class Dog extends Animal {}</li>
+<li>&#x5177;&#x4F53;&#x732B;&#x7C7B;&#xFF1A;public class Cat extends Animal {}</li>
+<li>&#x5F00;&#x59CB;&#xFF0C;&#x5728;&#x6D4B;&#x8BD5;&#x7C7B;&#x4E2D;&#x6BCF;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x5185;&#x5BB9;&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x5DE5;&#x4F5C;&#x5982;&#x679C;&#x6BD4;&#x8F83;&#x9EBB;&#x70E6;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x6709;&#x4EBA;&#x4E13;&#x95E8;&#x505A;&#x8FD9;&#x4E2A;&#x4E8B;&#x60C5;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x77E5;&#x9053;&#x4E86;&#x4E00;&#x4E2A;&#x4E13;&#x95E8;&#x7684;&#x7C7B;&#x6765;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+</li>
+<li><pre><code>  public class AnimalFactory {
+</code></pre><p>  &#x200B;        private AnimalFactory(){}
+  &#x200B;    </p>
+<pre><code>      //public static Dog createDog() {return new Dog();}
+      //public static Cat createCat() {return new Cat();}
+
+      //&#x6539;&#x8FDB;
+      public static Animal createAnimal(String animalName) {
+          if(&#x201C;dog&#x201D;.equals(animalName)) {}
+          else if(&#x201C;cat&#x201D;.equals(animale)) {
+
+          }else {
+              return null;
+          }
+      }
+  } 
+</code></pre><h3 id="2512&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x5DE5;&#x5382;&#x65B9;&#x6CD5;&#x6A21;&#x5F0F;&#x7684;&#x6982;&#x8FF0;&#x548C;&#x4F7F;&#x7528;&#x4E86;&#x89E3;">25.12_&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;(&#x5DE5;&#x5382;&#x65B9;&#x6CD5;&#x6A21;&#x5F0F;&#x7684;&#x6982;&#x8FF0;&#x548C;&#x4F7F;&#x7528;)(&#x4E86;&#x89E3;)</h3>
+</li>
+<li><p>A:&#x5DE5;&#x5382;&#x65B9;&#x6CD5;&#x6A21;&#x5F0F;&#x6982;&#x8FF0;</p>
+<ul>
+<li>&#x5DE5;&#x5382;&#x65B9;&#x6CD5;&#x6A21;&#x5F0F;&#x4E2D;&#x62BD;&#x8C61;&#x5DE5;&#x5382;&#x7C7B;&#x8D1F;&#x8D23;&#x5B9A;&#x4E49;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x5177;&#x4F53;&#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;&#x5DE5;&#x4F5C;&#x7531;&#x7EE7;&#x627F;&#x62BD;&#x8C61;&#x5DE5;&#x5382;&#x7684;&#x5177;&#x4F53;&#x7C7B;&#x5B9E;&#x73B0;&#x3002;</li>
+</ul>
+</li>
+<li><p>B:&#x4F18;&#x70B9;</p>
+<ul>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x8D1F;&#x8D23;&#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;&#xFF0C;&#x4ECE;&#x800C;&#x660E;&#x786E;&#x4E86;&#x5404;&#x4E2A;&#x7C7B;&#x7684;&#x804C;&#x8D23;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x65B0;&#x7684;&#x5BF9;&#x8C61;&#x589E;&#x52A0;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x7C7B;&#x548C;&#x5177;&#x4F53;&#x7684;&#x5DE5;&#x5382;&#x7C7B;&#x5373;&#x53EF;&#xFF0C;&#x4E0D;&#x5F71;&#x54CD;&#x5DF2;&#x6709;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x540E;&#x671F;&#x7EF4;&#x62A4;&#x5BB9;&#x6613;&#xFF0C;&#x589E;&#x5F3A;&#x4E86;&#x7CFB;&#x7EDF;&#x7684;&#x6269;&#x5C55;&#x6027;</li>
+</ul>
+</li>
+<li><p>C:&#x7F3A;&#x70B9;</p>
+<ul>
+<li>&#x9700;&#x8981;&#x989D;&#x5916;&#x7684;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#xFF0C;&#x589E;&#x52A0;&#x4E86;&#x5DE5;&#x4F5C;&#x91CF;</li>
+</ul>
+</li>
+<li>D:&#x6848;&#x4F8B;&#x6F14;&#x793A;</li>
+<li><pre><code>  &#x52A8;&#x7269;&#x62BD;&#x8C61;&#x7C7B;&#xFF1A;public abstract Animal { public abstract void eat(); }
+</code></pre>  &#x200B;    &#x5DE5;&#x5382;&#x63A5;&#x53E3;&#xFF1A;public interface Factory {public abstract Animal createAnimal();}
+  &#x200B;    &#x5177;&#x4F53;&#x72D7;&#x7C7B;&#xFF1A;public class Dog extends Animal {}
+  &#x200B;    &#x5177;&#x4F53;&#x732B;&#x7C7B;&#xFF1A;public class Cat extends Animal {}
+  &#x200B;    &#x5F00;&#x59CB;&#xFF0C;&#x5728;&#x6D4B;&#x8BD5;&#x7C7B;&#x4E2D;&#x6BCF;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x5185;&#x5BB9;&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x5DE5;&#x4F5C;&#x5982;&#x679C;&#x6BD4;&#x8F83;&#x9EBB;&#x70E6;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x6709;&#x4EBA;&#x4E13;&#x95E8;&#x505A;&#x8FD9;&#x4E2A;&#x4E8B;&#x60C5;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x77E5;&#x9053;&#x4E86;&#x4E00;&#x4E2A;&#x4E13;&#x95E8;&#x7684;&#x7C7B;&#x6765;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x3002;&#x53D1;&#x73B0;&#x6BCF;&#x6B21;&#x4FEE;&#x6539;&#x4EE3;&#x7801;&#x592A;&#x9EBB;&#x70E6;&#xFF0C;&#x7528;&#x5DE5;&#x5382;&#x65B9;&#x6CD5;&#x6539;&#x8FDB;&#xFF0C;&#x9488;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x5B9E;&#x73B0;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x5DE5;&#x5382;&#x3002;
+  &#x200B;    &#x72D7;&#x5DE5;&#x5382;&#xFF1A;public class DogFactory implements Factory {
+  &#x200B;        public Animal createAnimal() {&#x2026;}
+  &#x200B;            }
+  &#x200B;    &#x732B;&#x5DE5;&#x5382;&#xFF1A;public class CatFactory implements Factory {
+  &#x200B;        public Animal createAnimal() {&#x2026;}
+  &#x200B;            }  </li>
+</ul>
+<h3 id="2513gui&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7A97;&#x53E3;&#x5E76;&#x663E;&#x793A;">25.13_GUI(&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7A97;&#x53E3;&#x5E76;&#x663E;&#x793A;)</h3>
+<ul>
+<li>Graphical User Interface(&#x56FE;&#x5F62;&#x7528;&#x6237;&#x63A5;&#x53E3;)&#x3002;</li>
+<li><pre><code>  Frame  f = new Frame(&#x201C;my window&#x201D;);
+</code></pre>  &#x200B;    f.setLayout(new FlowLayout());//&#x8BBE;&#x7F6E;&#x5E03;&#x5C40;&#x7BA1;&#x7406;&#x5668;
+  &#x200B;    f.setSize(500,400);//&#x8BBE;&#x7F6E;&#x7A97;&#x4F53;&#x5927;&#x5C0F;
+  &#x200B;    f.setLocation(300,200);//&#x8BBE;&#x7F6E;&#x7A97;&#x4F53;&#x51FA;&#x73B0;&#x5728;&#x5C4F;&#x5E55;&#x7684;&#x4F4D;&#x7F6E;
+  &#x200B;    f.setIconImage(Toolkit.getDefaultToolkit().createImage(&quot;qq.png&quot;));
+  &#x200B;    f.setVisible(true);</li>
+</ul>
+<h3 id="2514gui&#x5E03;&#x5C40;&#x7BA1;&#x7406;&#x5668;">25.14_GUI(&#x5E03;&#x5C40;&#x7BA1;&#x7406;&#x5668;)</h3>
+<ul>
+<li>FlowLayout&#xFF08;&#x6D41;&#x5F0F;&#x5E03;&#x5C40;&#x7BA1;&#x7406;&#x5668;&#xFF09;<ul>
+<li>&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x7684;&#x987A;&#x5E8F;&#x6392;&#x5217;&#x3002;</li>
+<li>Panel&#x9ED8;&#x8BA4;&#x7684;&#x5E03;&#x5C40;&#x7BA1;&#x7406;&#x5668;&#x3002;</li>
+</ul>
+</li>
+<li>BorderLayout&#xFF08;&#x8FB9;&#x754C;&#x5E03;&#x5C40;&#x7BA1;&#x7406;&#x5668;&#xFF09;<ul>
+<li>&#x4E1C;&#xFF0C;&#x5357;&#xFF0C;&#x897F;&#xFF0C;&#x5317;&#xFF0C;&#x4E2D;</li>
+<li>Frame&#x9ED8;&#x8BA4;&#x7684;&#x5E03;&#x5C40;&#x7BA1;&#x7406;&#x5668;&#x3002;</li>
+</ul>
+</li>
+<li>GridLayout&#xFF08;&#x7F51;&#x683C;&#x5E03;&#x5C40;&#x7BA1;&#x7406;&#x5668;&#xFF09;<ul>
+<li>&#x89C4;&#x5219;&#x7684;&#x77E9;&#x9635;</li>
+</ul>
+</li>
+<li>CardLayout&#xFF08;&#x5361;&#x7247;&#x5E03;&#x5C40;&#x7BA1;&#x7406;&#x5668;&#xFF09;<ul>
+<li>&#x9009;&#x9879;&#x5361;</li>
+</ul>
+</li>
+<li>GridBagLayout&#xFF08;&#x7F51;&#x683C;&#x5305;&#x5E03;&#x5C40;&#x7BA1;&#x7406;&#x5668;&#xFF09;<ul>
+<li>&#x975E;&#x89C4;&#x5219;&#x7684;&#x77E9;&#x9635;<h3 id="2515gui&#x7A97;&#x4F53;&#x76D1;&#x542C;">25.15_GUI(&#x7A97;&#x4F53;&#x76D1;&#x542C;)</h3>
+Frame f = new Frame(&quot;&#x6211;&#x7684;&#x7A97;&#x4F53;&quot;);
+//&#x4E8B;&#x4EF6;&#x6E90;&#x662F;&#x7A97;&#x4F53;,&#x628A;&#x76D1;&#x542C;&#x5668;&#x6CE8;&#x518C;&#x5230;&#x4E8B;&#x4EF6;&#x6E90;&#x4E0A;
+//&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x4F20;&#x9012;&#x7ED9;&#x76D1;&#x542C;&#x5668;
+f.addWindowListener(new WindowAdapter() {
+&#x200B;        public void windowClosing(WindowEvent e) {
+&#x200B;                   //&#x9000;&#x51FA;&#x865A;&#x62DF;&#x673A;,&#x5173;&#x95ED;&#x7A97;&#x53E3;
+  &#x200B;    System.exit(0);
+  }
+});</li>
+</ul>
+</li>
+</ul>
+<h3 id="2516gui&#x9F20;&#x6807;&#x76D1;&#x542C;">25.16_GUI(&#x9F20;&#x6807;&#x76D1;&#x542C;)</h3>
+<h3 id="2517gui&#x952E;&#x76D8;&#x76D1;&#x542C;&#x548C;&#x952E;&#x76D8;&#x4E8B;&#x4EF6;">25.17_GUI(&#x952E;&#x76D8;&#x76D1;&#x542C;&#x548C;&#x952E;&#x76D8;&#x4E8B;&#x4EF6;)</h3>
+<h3 id="2518gui&#x52A8;&#x4F5C;&#x76D1;&#x542C;">25.18_GUI(&#x52A8;&#x4F5C;&#x76D1;&#x542C;)</h3>
+<h3 id="2519&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x9002;&#x914D;&#x5668;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x638C;&#x63E1;">25.19_&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;(&#x9002;&#x914D;&#x5668;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;)(&#x638C;&#x63E1;)</h3>
+<ul>
+<li>a.&#x4EC0;&#x4E48;&#x662F;&#x9002;&#x914D;&#x5668;<ul>
+<li>&#x5728;&#x4F7F;&#x7528;&#x76D1;&#x542C;&#x5668;&#x7684;&#x65F6;&#x5019;, &#x9700;&#x8981;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7C7B;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x63A5;&#x53E3;.</li>
+<li>&#x901A;&#x5E38;&#x63A5;&#x53E3;&#x4E2D;&#x6709;&#x591A;&#x4E2A;&#x65B9;&#x6CD5;, &#x800C;&#x7A0B;&#x5E8F;&#x4E2D;&#x4E0D;&#x4E00;&#x5B9A;&#x6240;&#x6709;&#x7684;&#x90FD;&#x7528;&#x5230;, &#x4F46;&#x53C8;&#x5FC5;&#x987B;&#x91CD;&#x5199;, &#x8FD9;&#x5F88;&#x7E41;&#x7410;.</li>
+<li>&#x9002;&#x914D;&#x5668;&#x7B80;&#x5316;&#x4E86;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;, &#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x76D1;&#x542C;&#x5668;&#x65F6;&#x53EA;&#x8981;&#x7EE7;&#x627F;&#x9002;&#x914D;&#x5668;, &#x7136;&#x540E;&#x91CD;&#x5199;&#x9700;&#x8981;&#x7684;&#x65B9;&#x6CD5;&#x5373;&#x53EF;.</li>
+</ul>
+</li>
+<li>b.&#x9002;&#x914D;&#x5668;&#x539F;&#x7406;<ul>
+<li>&#x9002;&#x914D;&#x5668;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7C7B;, &#x5B9E;&#x73B0;&#x4E86;&#x76D1;&#x542C;&#x5668;&#x63A5;&#x53E3;, &#x6240;&#x6709;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x90FD;&#x91CD;&#x5199;&#x4E86;, &#x4F46;&#x662F;&#x65B9;&#x6CD5;&#x5168;&#x662F;&#x7A7A;&#x7684;.</li>
+<li>&#x9002;&#x914D;&#x5668;&#x7C7B;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x6210;&#x62BD;&#x8C61;&#x7684;,&#x56E0;&#x4E3A;&#x521B;&#x5EFA;&#x8BE5;&#x7C7B;&#x5BF9;&#x8C61;,&#x8C03;&#x7528;&#x7A7A;&#x65B9;&#x6CD5;&#x662F;&#x6CA1;&#x6709;&#x610F;&#x4E49;&#x7684;</li>
+<li>&#x76EE;&#x7684;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x7B80;&#x5316;&#x7A0B;&#x5E8F;&#x5458;&#x7684;&#x64CD;&#x4F5C;, &#x5B9A;&#x4E49;&#x76D1;&#x542C;&#x5668;&#x65F6;&#x7EE7;&#x627F;&#x9002;&#x914D;&#x5668;, &#x53EA;&#x91CD;&#x5199;&#x9700;&#x8981;&#x7684;&#x65B9;&#x6CD5;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;.<h3 id="2520gui&#x9700;&#x8981;&#x77E5;&#x9053;&#x7684;">25.20_GUI(&#x9700;&#x8981;&#x77E5;&#x9053;&#x7684;)</h3>
+</li>
+</ul>
+</li>
+<li>&#x4E8B;&#x4EF6;&#x5904;&#x7406;<ul>
+<li>&#x4E8B;&#x4EF6;: &#x7528;&#x6237;&#x7684;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;</li>
+<li>&#x4E8B;&#x4EF6;&#x6E90;: &#x88AB;&#x64CD;&#x4F5C;&#x7684;&#x7EC4;&#x4EF6;</li>
+<li>&#x76D1;&#x542C;&#x5668;: &#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;, &#x5B9E;&#x73B0;&#x4E86;&#x76D1;&#x542C;&#x5668;&#x63A5;&#x53E3;, &#x5305;&#x542B;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x65B9;&#x6CD5;,&#x628A;&#x76D1;&#x542C;&#x5668;&#x6DFB;&#x52A0;&#x5728;&#x4E8B;&#x4EF6;&#x6E90;&#x4E0A;, &#x5F53;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x7684;&#x65F6;&#x5019;&#x865A;&#x62DF;&#x673A;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x76D1;&#x542C;&#x5668;&#x4E2D;&#x7684;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x65B9;&#x6CD5;<h3 id="2521day25&#x603B;&#x7ED3;">25.21_day25&#x603B;&#x7ED3;</h3>
+&#x628A;&#x4ECA;&#x5929;&#x7684;&#x77E5;&#x8BC6;&#x70B9;&#x603B;&#x7ED3;&#x4E00;&#x904D;&#x3002;</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="day24笔记.html" class="navigation navigation-prev " aria-label="Previous page: day24.多线程(1)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="day26笔记.html" class="navigation navigation-next " aria-label="Next page: day26.网络编程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"day25.多线程(2)","level":"1.24","depth":1,"next":{"title":"day26.网络编程","level":"1.25","depth":1,"path":"day26笔记.md","ref":"day26笔记.md","articles":[]},"previous":{"title":"day24.多线程(1)","level":"1.23","depth":1,"path":"day24笔记.md","ref":"day24笔记.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"day25笔记.md","mtime":"2018-10-31T03:08:24.725Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-31T03:56:02.696Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,819 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>day26.网络编程 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="day27笔记.html" />
+    
+    
+    <link rel="prev" href="day25笔记.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="day01笔记.html">
+            
+                <a href="day01笔记.html">
+            
+                    
+                    day01.计算机基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="day02笔记.html">
+            
+                <a href="day02笔记.html">
+            
+                    
+                    day02.Java语言基础(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="day03笔记.html">
+            
+                <a href="day03笔记.html">
+            
+                    
+                    day03.Java语言基础(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="day04笔记.html">
+            
+                <a href="day04笔记.html">
+            
+                    
+                    day04.Java语言基础(3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="day05笔记.html">
+            
+                <a href="day05笔记.html">
+            
+                    
+                    day05.Java语言基础(4)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="day06笔记.html">
+            
+                <a href="day06笔记.html">
+            
+                    
+                    day06.面向对象(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="day07笔记.html">
+            
+                <a href="day07笔记.html">
+            
+                    
+                    day07.面向对象(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="day08笔记.html">
+            
+                <a href="day08笔记.html">
+            
+                    
+                    day08.面向对象(3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="day10笔记.html">
+            
+                <a href="day10笔记.html">
+            
+                    
+                    day10.面向对象(4)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="day11笔记.html">
+            
+                <a href="day11笔记.html">
+            
+                    
+                    day11.Java开发工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="day13笔记.html">
+            
+                <a href="day13笔记.html">
+            
+                    
+                    day13.常见对象(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="day14笔记.html">
+            
+                <a href="day14笔记.html">
+            
+                    
+                    day14.常见对象(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="day15笔记.html">
+            
+                <a href="day15笔记.html">
+            
+                    
+                    day15.集合框架(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="day16笔记.html">
+            
+                <a href="day16笔记.html">
+            
+                    
+                    day16.集合框架(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="day17笔记.html">
+            
+                <a href="day17笔记.html">
+            
+                    
+                    day17.集合框架(3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="day18笔记.html">
+            
+                <a href="day18笔记.html">
+            
+                    
+                    day18.集合框架(4)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="day19笔记.html">
+            
+                <a href="day19笔记.html">
+            
+                    
+                    day19.异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="day20笔记.html">
+            
+                <a href="day20笔记.html">
+            
+                    
+                    day20.IO流(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="day21笔记.html">
+            
+                <a href="day21笔记.html">
+            
+                    
+                    day21.IO流(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="day22笔记.html">
+            
+                <a href="day22笔记.html">
+            
+                    
+                    day22.IO流(3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="day23笔记.html">
+            
+                <a href="day23笔记.html">
+            
+                    
+                    day23.File类及递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="day24笔记.html">
+            
+                <a href="day24笔记.html">
+            
+                    
+                    day24.多线程(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="day25笔记.html">
+            
+                <a href="day25笔记.html">
+            
+                    
+                    day25.多线程(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.25" data-path="day26笔记.html">
+            
+                <a href="day26笔记.html">
+            
+                    
+                    day26.网络编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="day27笔记.html">
+            
+                <a href="day27笔记.html">
+            
+                    
+                    day27.反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >day26.网络编程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="day26&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;">day26.&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;</h1>
+<h3 id="2601&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x6982;&#x8FF0;&#x4E86;&#x89E3;">26.01_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x6982;&#x8FF0;)(&#x4E86;&#x89E3;)</h3>
+<ul>
+<li>A:&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;<ul>
+<li>&#x662F;&#x6307;&#x5C06;&#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x4E0D;&#x540C;&#x7684;&#x5177;&#x6709;&#x72EC;&#x7ACB;&#x529F;&#x80FD;&#x7684;&#x591A;&#x53F0;&#x8BA1;&#x7B97;&#x673A;&#x53CA;&#x5176;&#x5916;&#x90E8;&#x8BBE;&#x5907;&#xFF0C;&#x901A;&#x8FC7;&#x901A;&#x4FE1;&#x7EBF;&#x8DEF;&#x8FDE;&#x63A5;&#x8D77;&#x6765;&#xFF0C;&#x5728;&#x7F51;&#x7EDC;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;&#x7F51;&#x7EDC;&#x7BA1;&#x7406;&#x8F6F;&#x4EF6;&#x53CA;&#x7F51;&#x7EDC;&#x901A;&#x4FE1;&#x534F;&#x8BAE;&#x7684;&#x7BA1;&#x7406;&#x548C;&#x534F;&#x8C03;&#x4E0B;&#xFF0C;&#x5B9E;&#x73B0;&#x8D44;&#x6E90;&#x5171;&#x4EAB;&#x548C;&#x4FE1;&#x606F;&#x4F20;&#x9012;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x3002;</li>
+</ul>
+</li>
+<li>B:&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;<ul>
+<li>&#x5C31;&#x662F;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x7F51;&#x7EDC;&#x4E92;&#x8FDE;&#x7684;&#x4E0D;&#x540C;&#x8BA1;&#x7B97;&#x673A;&#x4E0A;&#x8FD0;&#x884C;&#x7684;&#x7A0B;&#x5E8F;&#x95F4;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x4EA4;&#x6362;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h3 id="2602&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x4E09;&#x8981;&#x7D20;&#x4E4B;ip&#x6982;&#x8FF0;&#x638C;&#x63E1;">26.02_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x4E09;&#x8981;&#x7D20;&#x4E4B;IP&#x6982;&#x8FF0;)(&#x638C;&#x63E1;)</h3>
+<ul>
+<li>&#x6BCF;&#x4E2A;&#x8BBE;&#x5907;&#x5728;&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6;</li>
+<li>&#x6BCF;&#x53F0;&#x7F51;&#x7EDC;&#x7EC8;&#x7AEF;&#x5728;&#x7F51;&#x7EDC;&#x4E2D;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x7F51;&#x7EDC;&#x4E2D;&#x4F20;&#x8F93;&#x6570;&#x636E;&#x5C31;&#x662F;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x5730;&#x5740;&#x3002; </li>
+<li>ipconfig&#xFF1A;&#x67E5;&#x770B;&#x672C;&#x673A;IP192.168.12.42</li>
+<li>ping&#xFF1A;&#x6D4B;&#x8BD5;&#x8FDE;&#x63A5;192.168.40.62</li>
+<li>&#x672C;&#x5730;&#x56DE;&#x8DEF;&#x5730;&#x5740;&#xFF1A;127.0.0.1 255.255.255.255&#x662F;&#x5E7F;&#x64AD;&#x5730;&#x5740;</li>
+<li>IPv4&#xFF1A;4&#x4E2A;&#x5B57;&#x8282;&#x7EC4;&#x6210;&#xFF0C;4&#x4E2A;0-255&#x3002;&#x5927;&#x6982;42&#x4EBF;&#xFF0C;30&#x4EBF;&#x90FD;&#x5728;&#x5317;&#x7F8E;&#xFF0C;&#x4E9A;&#x6D32;4&#x4EBF;&#x3002;2011&#x5E74;&#x521D;&#x5DF2;&#x7ECF;&#x7528;&#x5C3D;&#x3002; </li>
+<li>IPv6&#xFF1A;8&#x7EC4;&#xFF0C;&#x6BCF;&#x7EC4;4&#x4E2A;16&#x8FDB;&#x5236;&#x6570;&#x3002;</li>
+<li>1a2b:0000:aaaa:0000:0000:0000:aabb:1f2f</li>
+<li>1a2b::aaaa:0000:0000:0000:aabb:1f2f</li>
+<li>1a2b:0000:aaaa::aabb:1f2f</li>
+<li>1a2b:0000:aaaa::0000:aabb:1f2f</li>
+<li>1a2b:0000:aaaa:0000::aabb:1f2f</li>
+</ul>
+<h3 id="2603&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x4E09;&#x8981;&#x7D20;&#x4E4B;&#x7AEF;&#x53E3;&#x53F7;&#x6982;&#x8FF0;&#x638C;&#x63E1;">26.03_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x4E09;&#x8981;&#x7D20;&#x4E4B;&#x7AEF;&#x53E3;&#x53F7;&#x6982;&#x8FF0;)(&#x638C;&#x63E1;)</h3>
+<ul>
+<li>&#x6BCF;&#x4E2A;&#x7A0B;&#x5E8F;&#x5728;&#x8BBE;&#x5907;&#x4E0A;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6;</li>
+<li>&#x6BCF;&#x4E2A;&#x7F51;&#x7EDC;&#x7A0B;&#x5E8F;&#x90FD;&#x9700;&#x8981;&#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x7AEF;&#x53E3;&#x53F7;&#xFF0C;&#x4F20;&#x8F93;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x9664;&#x4E86;&#x786E;&#x5B9A;&#x53D1;&#x5230;&#x54EA;&#x53F0;&#x673A;&#x5668;&#x4E0A;&#xFF0C;&#x8FD8;&#x8981;&#x660E;&#x786E;&#x53D1;&#x5230;&#x54EA;&#x4E2A;&#x7A0B;&#x5E8F;&#x3002;</li>
+<li>&#x7AEF;&#x53E3;&#x53F7;&#x8303;&#x56F4;&#x4ECE;0-65535</li>
+<li>&#x7F16;&#x5199;&#x7F51;&#x7EDC;&#x5E94;&#x7528;&#x5C31;&#x9700;&#x8981;&#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x7AEF;&#x53E3;&#x53F7;&#xFF0C;&#x5C3D;&#x91CF;&#x4F7F;&#x7528;1024&#x4EE5;&#x4E0A;&#x7684;&#xFF0C;1024&#x4EE5;&#x4E0B;&#x7684;&#x57FA;&#x672C;&#x4E0A;&#x90FD;&#x88AB;&#x7CFB;&#x7EDF;&#x7A0B;&#x5E8F;&#x5360;&#x7528;&#x4E86;&#x3002;</li>
+<li>&#x5E38;&#x7528;&#x7AEF;&#x53E3;<ul>
+<li>mysql: 3306</li>
+<li>oracle: 1521</li>
+<li>web: 80</li>
+<li>tomcat: 8080</li>
+<li>QQ: 4000</li>
+<li>feiQ: 2425</li>
+</ul>
+</li>
+</ul>
+<h3 id="2604&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x4E09;&#x8981;&#x7D20;&#x534F;&#x8BAE;&#x638C;&#x63E1;">26.04_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x4E09;&#x8981;&#x7D20;&#x534F;&#x8BAE;)(&#x638C;&#x63E1;)</h3>
+<ul>
+<li>&#x4E3A;&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;&#x4E2D;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x4EA4;&#x6362;&#x800C;&#x5EFA;&#x7ACB;&#x7684;&#x89C4;&#x5219;&#x3001;&#x6807;&#x51C6;&#x6216;&#x7EA6;&#x5B9A;&#x7684;&#x96C6;&#x5408;&#x3002;</li>
+<li>UDP<ul>
+<li>&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#xFF0C;&#x6570;&#x636E;&#x4E0D;&#x5B89;&#x5168;&#xFF0C;&#x901F;&#x5EA6;&#x5FEB;&#x3002;&#x4E0D;&#x533A;&#x5206;&#x5BA2;&#x6237;&#x7AEF;&#x4E0E;&#x670D;&#x52A1;&#x7AEF;&#x3002;</li>
+</ul>
+</li>
+<li>TCP
+&#x3000;&#x3000;* &#x9762;&#x5411;&#x8FDE;&#x63A5;&#xFF08;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#xFF09;&#xFF0C;&#x6570;&#x636E;&#x5B89;&#x5168;&#xFF0C;&#x901F;&#x5EA6;&#x7565;&#x4F4E;&#x3002;&#x5206;&#x4E3A;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x3002;<ul>
+<li>&#x4E09;&#x6B21;&#x63E1;&#x624B;: &#x5BA2;&#x6237;&#x7AEF;&#x5148;&#x5411;&#x670D;&#x52A1;&#x7AEF;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;, &#x670D;&#x52A1;&#x7AEF;&#x54CD;&#x5E94;&#x8BF7;&#x6C42;, &#x4F20;&#x8F93;&#x6570;&#x636E;</li>
+</ul>
+</li>
+</ul>
+<h3 id="2605&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;socket&#x901A;&#x4FE1;&#x539F;&#x7406;&#x56FE;&#x89E3;&#x4E86;&#x89E3;">26.05_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(Socket&#x901A;&#x4FE1;&#x539F;&#x7406;&#x56FE;&#x89E3;)(&#x4E86;&#x89E3;)</h3>
+<ul>
+<li>A:Socket&#x5957;&#x63A5;&#x5B57;&#x6982;&#x8FF0;&#xFF1A;<ul>
+<li>&#x7F51;&#x7EDC;&#x4E0A;&#x5177;&#x6709;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7684;IP&#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;&#x53F7;&#x7EC4;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x624D;&#x80FD;&#x6784;&#x6210;&#x552F;&#x4E00;&#x80FD;&#x8BC6;&#x522B;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x5957;&#x63A5;&#x5B57;&#x3002;</li>
+<li>&#x901A;&#x4FE1;&#x7684;&#x4E24;&#x7AEF;&#x90FD;&#x6709;Socket&#x3002;</li>
+<li>&#x7F51;&#x7EDC;&#x901A;&#x4FE1;&#x5176;&#x5B9E;&#x5C31;&#x662F;Socket&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x3002;</li>
+<li>&#x6570;&#x636E;&#x5728;&#x4E24;&#x4E2A;Socket&#x95F4;&#x901A;&#x8FC7;IO&#x6D41;&#x4F20;&#x8F93;&#x3002;</li>
+<li>Socket&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#x521B;&#x5EFA;&#xFF0C;&#x901A;&#x8FC7;&#x4E00;&#x79CD;&#x7ED1;&#x5B9A;&#x673A;&#x5236;&#x4E0E;&#x9A71;&#x52A8;&#x7A0B;&#x5E8F;&#x5EFA;&#x7ACB;&#x5173;&#x7CFB;&#xFF0C;&#x544A;&#x8BC9;&#x81EA;&#x5DF1;&#x6240;&#x5BF9;&#x5E94;&#x7684;IP&#x548C;port&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h3 id="2606&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;udp&#x4F20;&#x8F93;&#x4E86;&#x89E3;">26.06_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(UDP&#x4F20;&#x8F93;)(&#x4E86;&#x89E3;)</h3>
+<ul>
+<li>1.&#x53D1;&#x9001;Send<ul>
+<li>&#x521B;&#x5EFA;DatagramSocket, &#x968F;&#x673A;&#x7AEF;&#x53E3;&#x53F7;</li>
+<li>&#x521B;&#x5EFA;DatagramPacket, &#x6307;&#x5B9A;&#x6570;&#x636E;, &#x957F;&#x5EA6;, &#x5730;&#x5740;, &#x7AEF;&#x53E3;</li>
+<li>&#x4F7F;&#x7528;DatagramSocket&#x53D1;&#x9001;DatagramPacket</li>
+<li>&#x5173;&#x95ED;DatagramSocket</li>
+</ul>
+</li>
+<li>2.&#x63A5;&#x6536;Receive<ul>
+<li>&#x521B;&#x5EFA;DatagramSocket, &#x6307;&#x5B9A;&#x7AEF;&#x53E3;&#x53F7;</li>
+<li>&#x521B;&#x5EFA;DatagramPacket, &#x6307;&#x5B9A;&#x6570;&#x7EC4;, &#x957F;&#x5EA6;</li>
+<li>&#x4F7F;&#x7528;DatagramSocket&#x63A5;&#x6536;DatagramPacket</li>
+<li>&#x5173;&#x95ED;DatagramSocket</li>
+<li>&#x4ECE;DatagramPacket&#x4E2D;&#x83B7;&#x53D6;&#x6570;&#x636E;</li>
+</ul>
+</li>
+<li>3.&#x63A5;&#x6536;&#x65B9;&#x83B7;&#x53D6;ip&#x548C;&#x7AEF;&#x53E3;&#x53F7;<ul>
+<li>String ip = packet.getAddress().getHostAddress();</li>
+<li>int port = packet.getPort();</li>
+</ul>
+</li>
+</ul>
+<h3 id="2607&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;udp&#x4F20;&#x8F93;&#x4F18;&#x5316;">26.07_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(UDP&#x4F20;&#x8F93;&#x4F18;&#x5316;)</h3>
+<ul>
+<li>&#x63A5;&#x6536;&#x7AEF;Receive</li>
+<li><pre><code>  DatagramSocket socket = new DatagramSocket(6666);                        //&#x521B;&#x5EFA;socket&#x76F8;&#x5F53;&#x4E8E;&#x521B;&#x5EFA;&#x7801;&#x5934;
+</code></pre>  &#x200B;    DatagramPacket packet = new DatagramPacket(new byte[1024], 1024);        //&#x521B;&#x5EFA;packet&#x76F8;&#x5F53;&#x4E8E;&#x521B;&#x5EFA;&#x96C6;&#x88C5;&#x7BB1;
+  &#x200B;    <pre><code>  while(true) {
+      socket.receive(packet);                                                //&#x63A5;&#x6536;&#x8D27;&#x7269;
+      byte[] arr = packet.getData();
+      int len = packet.getLength();
+      String ip = packet.getAddress().getHostAddress();
+      System.out.println(ip + &quot;:&quot; + new String(arr,0,len));
+  }
+</code></pre></li>
+<li><p>&#x53D1;&#x9001;&#x7AEF;Send</p>
+<pre><code>  DatagramSocket socket = new DatagramSocket();        //&#x521B;&#x5EFA;socket&#x76F8;&#x5F53;&#x4E8E;&#x521B;&#x5EFA;&#x7801;&#x5934;
+</code></pre><p>  &#x200B;    Scanner sc = new Scanner(System.in);
+  &#x200B;    </p>
+<pre><code>  while(true) {
+      String str = sc.nextLine();
+      if(&quot;quit&quot;.equals(str))
+          break;
+      DatagramPacket packet =                             //&#x521B;&#x5EFA;packet&#x76F8;&#x5F53;&#x4E8E;&#x521B;&#x5EFA;&#x96C6;&#x88C5;&#x7BB1;
+              new DatagramPacket(str.getBytes(), str.getBytes().length, InetAddress.getByName(&quot;127.0.0.1&quot;), 6666);
+      socket.send(packet);            //&#x53D1;&#x8D27;
+  }
+  socket.close();
+</code></pre><h3 id="2608&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;udp&#x4F20;&#x8F93;&#x591A;&#x7EBF;&#x7A0B;">26.08_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(UDP&#x4F20;&#x8F93;&#x591A;&#x7EBF;&#x7A0B;)</h3>
+</li>
+<li><p>A&#x53D1;&#x9001;&#x548C;&#x63A5;&#x6536;&#x5728;&#x4E00;&#x4E2A;&#x7A97;&#x53E3;&#x5B8C;&#x6210;</p>
+<pre><code>  public class Demo3_MoreThread {
+
+      /**
+       * @param args
+       */
+      public static void main(String[] args) {
+          new Receive().start();
+
+          new Send().start();
+      }
+
+  }
+
+  class Receive extends Thread {
+      public void run() {
+          try {
+              DatagramSocket socket = new DatagramSocket(6666);                    //&#x521B;&#x5EFA;socket&#x76F8;&#x5F53;&#x4E8E;&#x521B;&#x5EFA;&#x7801;&#x5934;
+              DatagramPacket packet = new DatagramPacket(new byte[1024], 1024);    //&#x521B;&#x5EFA;packet&#x76F8;&#x5F53;&#x4E8E;&#x521B;&#x5EFA;&#x96C6;&#x88C5;&#x7BB1;
+
+              while(true) {
+                  socket.receive(packet);                                                //&#x63A5;&#x6536;&#x8D27;&#x7269;
+                  byte[] arr = packet.getData();
+                  int len = packet.getLength();
+                  String ip = packet.getAddress().getHostAddress();
+                  System.out.println(ip + &quot;:&quot; + new String(arr,0,len));
+              }
+          } catch (IOException e) {
+
+              e.printStackTrace();
+          }
+      }
+  }
+
+  class Send extends Thread {
+      public void run() {
+          try {
+              DatagramSocket socket = new DatagramSocket();        //&#x521B;&#x5EFA;socket&#x76F8;&#x5F53;&#x4E8E;&#x521B;&#x5EFA;&#x7801;&#x5934;
+              Scanner sc = new Scanner(System.in);
+
+              while(true) {
+                  String str = sc.nextLine();
+                  if(&quot;quit&quot;.equals(str))
+                      break;
+                  DatagramPacket packet =                             //&#x521B;&#x5EFA;packet&#x76F8;&#x5F53;&#x4E8E;&#x521B;&#x5EFA;&#x96C6;&#x88C5;&#x7BB1;
+                          new DatagramPacket(str.getBytes(), str.getBytes().length, InetAddress.getByName(&quot;127.0.0.1&quot;), 6666);
+                  socket.send(packet);            //&#x53D1;&#x8D27;
+              }
+              socket.close();
+          }  catch (IOException e) {
+
+              e.printStackTrace();
+          }
+      }
+  }
+</code></pre></li>
+</ul>
+<h3 id="2609&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;udp&#x804A;&#x5929;&#x56FE;&#x5F62;&#x5316;&#x754C;&#x9762;">26.09_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(UDP&#x804A;&#x5929;&#x56FE;&#x5F62;&#x5316;&#x754C;&#x9762;)</h3>
+<p>&#x200B;    </p>
+<h3 id="2610&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;udp&#x804A;&#x5929;&#x53D1;&#x9001;&#x529F;&#x80FD;">26.10_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(UDP&#x804A;&#x5929;&#x53D1;&#x9001;&#x529F;&#x80FD;)</h3>
+<p>&#x200B;<br>&#x200B;        </p>
+<h3 id="2611&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;udp&#x804A;&#x5929;&#x8BB0;&#x5F55;&#x529F;&#x80FD;">26.11_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(UDP&#x804A;&#x5929;&#x8BB0;&#x5F55;&#x529F;&#x80FD;)</h3>
+<p>&#x200B;<br>&#x200B;    </p>
+<h3 id="2612&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;udp&#x804A;&#x5929;&#x6E05;&#x5C4F;&#x529F;&#x80FD;">26.12_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(UDP&#x804A;&#x5929;&#x6E05;&#x5C4F;&#x529F;&#x80FD;)</h3>
+<h3 id="2613&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;udp&#x804A;&#x5929;&#x9707;&#x52A8;&#x529F;&#x80FD;">26.13_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(UDP&#x804A;&#x5929;&#x9707;&#x52A8;&#x529F;&#x80FD;)</h3>
+<h3 id="2614&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;udp&#x804A;&#x5929;&#x5FEB;&#x6377;&#x952E;&#x548C;&#x4EE3;&#x7801;&#x4F18;&#x5316;">26.14_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(UDP&#x804A;&#x5929;&#x5FEB;&#x6377;&#x952E;&#x548C;&#x4EE3;&#x7801;&#x4F18;&#x5316;)</h3>
+<p>&#x200B;    </p>
+<h3 id="2615&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;udp&#x804A;&#x5929;&#x751F;&#x6210;jar&#x6587;&#x4EF6;">26.15_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(UDP&#x804A;&#x5929;&#x751F;&#x6210;jar&#x6587;&#x4EF6;)</h3>
+<h3 id="2616&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;tcp&#x534F;&#x8BAE;&#x638C;&#x63E1;">26.16_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(TCP&#x534F;&#x8BAE;)(&#x638C;&#x63E1;)</h3>
+<ul>
+<li>1.&#x5BA2;&#x6237;&#x7AEF;<ul>
+<li>&#x521B;&#x5EFA;Socket&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x7AEF;(&#x6307;&#x5B9A;ip&#x5730;&#x5740;,&#x7AEF;&#x53E3;&#x53F7;)&#x901A;&#x8FC7;ip&#x5730;&#x5740;&#x627E;&#x5BF9;&#x5E94;&#x7684;&#x670D;&#x52A1;&#x5668;</li>
+<li>&#x8C03;&#x7528;Socket&#x7684;getInputStream()&#x548C;getOutputStream()&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x76F8;&#x8FDE;&#x7684;IO&#x6D41;</li>
+<li>&#x8F93;&#x5165;&#x6D41;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x670D;&#x52A1;&#x7AEF;&#x8F93;&#x51FA;&#x6D41;&#x5199;&#x51FA;&#x7684;&#x6570;&#x636E;</li>
+<li>&#x8F93;&#x51FA;&#x6D41;&#x53EF;&#x4EE5;&#x5199;&#x51FA;&#x6570;&#x636E;&#x5230;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x8F93;&#x5165;&#x6D41;</li>
+</ul>
+</li>
+<li>2.&#x670D;&#x52A1;&#x7AEF;<ul>
+<li>&#x521B;&#x5EFA;ServerSocket(&#x9700;&#x8981;&#x6307;&#x5B9A;&#x7AEF;&#x53E3;&#x53F7;)</li>
+<li>&#x8C03;&#x7528;ServerSocket&#x7684;accept()&#x65B9;&#x6CD5;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#xFF0C;&#x5F97;&#x5230;&#x4E00;&#x4E2A;Socket</li>
+<li>&#x8C03;&#x7528;Socket&#x7684;getInputStream()&#x548C;getOutputStream()&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x76F8;&#x8FDE;&#x7684;IO&#x6D41;</li>
+<li>&#x8F93;&#x5165;&#x6D41;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x5BA2;&#x6237;&#x7AEF;&#x8F93;&#x51FA;&#x6D41;&#x5199;&#x51FA;&#x7684;&#x6570;&#x636E;</li>
+<li>&#x8F93;&#x51FA;&#x6D41;&#x53EF;&#x4EE5;&#x5199;&#x51FA;&#x6570;&#x636E;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8F93;&#x5165;&#x6D41;</li>
+</ul>
+</li>
+</ul>
+<h3 id="2617&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;tcp&#x534F;&#x8BAE;&#x4EE3;&#x7801;&#x4F18;&#x5316;">26.17_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(TCP&#x534F;&#x8BAE;&#x4EE3;&#x7801;&#x4F18;&#x5316;)</h3>
+<ul>
+<li><p>&#x5BA2;&#x6237;&#x7AEF;</p>
+<pre><code>  Socket socket = new Socket(&quot;127.0.0.1&quot;, 9999);        //&#x521B;&#x5EFA;Socket&#x6307;&#x5B9A;ip&#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;&#x53F7;
+</code></pre><p>  &#x200B;    InputStream is = socket.getInputStream();            //&#x83B7;&#x53D6;&#x8F93;&#x5165;&#x6D41;
+  &#x200B;    OutputStream os = socket.getOutputStream();            //&#x83B7;&#x53D6;&#x8F93;&#x51FA;&#x6D41;
+  &#x200B;    BufferedReader br = new BufferedReader(new InputStreamReader(is));
+  &#x200B;    PrintStream ps = new PrintStream(os);
+  &#x200B;    </p>
+<pre><code>  System.out.println(br.readLine());
+  ps.println(&quot;&#x6211;&#x60F3;&#x62A5;&#x540D;&#x5C31;&#x4E1A;&#x73ED;&quot;);
+  System.out.println(br.readLine());
+  ps.println(&quot;&#x7237;&#x4E0D;&#x5B66;&#x4E86;&quot;);
+  socket.close();
+</code></pre></li>
+<li><p>&#x670D;&#x52A1;&#x7AEF;</p>
+<pre><code>  ServerSocket server = new ServerSocket(9999);    //&#x521B;&#x5EFA;&#x670D;&#x52A1;&#x5668;
+</code></pre><p>  &#x200B;    Socket socket = server.accept();                //&#x63A5;&#x53D7;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BF7;&#x6C42;
+  &#x200B;    InputStream is = socket.getInputStream();        //&#x83B7;&#x53D6;&#x8F93;&#x5165;&#x6D41;
+  &#x200B;    OutputStream os = socket.getOutputStream();        //&#x83B7;&#x53D6;&#x8F93;&#x51FA;&#x6D41;
+  &#x200B;    </p>
+<pre><code>  BufferedReader br = new BufferedReader(new InputStreamReader(is));
+  PrintStream ps = new PrintStream(os);
+
+  ps.println(&quot;&#x6B22;&#x8FCE;&#x54A8;&#x8BE2;&#x4F20;&#x667A;&#x64AD;&#x5BA2;&quot;);
+  System.out.println(br.readLine());
+  ps.println(&quot;&#x62A5;&#x6EE1;&#x4E86;,&#x8BF7;&#x62A5;&#x4E0B;&#x4E00;&#x671F;&#x5427;&quot;);
+  System.out.println(br.readLine());
+  server.close();
+  socket.close();
+</code></pre></li>
+</ul>
+<h3 id="2618&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x670D;&#x52A1;&#x7AEF;&#x662F;&#x591A;&#x7EBF;&#x7A0B;&#x7684;&#x638C;&#x63E1;">26.18_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(&#x670D;&#x52A1;&#x7AEF;&#x662F;&#x591A;&#x7EBF;&#x7A0B;&#x7684;)(&#x638C;&#x63E1;)</h3>
+<p>&#x200B;    ServerSocket server = new ServerSocket(9999);    //&#x521B;&#x5EFA;&#x670D;&#x52A1;&#x5668;
+&#x200B;        while(true) {
+&#x200B;            final Socket socket = server.accept();                //&#x63A5;&#x53D7;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BF7;&#x6C42;
+&#x200B;            new Thread() {
+&#x200B;                public void run() {
+&#x200B;                    try {
+&#x200B;                        BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+&#x200B;                        PrintStream ps = new PrintStream(socket.getOutputStream());
+&#x200B;                        ps.println(&quot;&#x6B22;&#x8FCE;&#x54A8;&#x8BE2;&#x4F20;&#x667A;&#x64AD;&#x5BA2;&quot;);
+&#x200B;                        System.out.println(br.readLine());
+&#x200B;                        ps.println(&quot;&#x62A5;&#x6EE1;&#x4E86;,&#x8BF7;&#x62A5;&#x4E0B;&#x4E00;&#x671F;&#x5427;&quot;);
+&#x200B;                        System.out.println(br.readLine());
+&#x200B;                        socket.close();
+&#x200B;                    } catch (IOException e) {
+&#x200B;                        e.printStackTrace();
+&#x200B;                    }
+&#x200B;                }
+&#x200B;            }.start();
+&#x200B;        }
+&#x200B;    }</p>
+<h3 id="2619&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x7EC3;&#x4E60;">26.19_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(&#x7EC3;&#x4E60;)</h3>
+<ul>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x5411;&#x670D;&#x52A1;&#x5668;&#x5199;&#x5B57;&#x7B26;&#x4E32;(&#x952E;&#x76D8;&#x5F55;&#x5165;),&#x670D;&#x52A1;&#x5668;(&#x591A;&#x7EBF;&#x7A0B;)&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x53CD;&#x8F6C;&#x540E;&#x5199;&#x56DE;,&#x5BA2;&#x6237;&#x7AEF;&#x518D;&#x6B21;&#x8BFB;&#x53D6;&#x5230;&#x662F;&#x53CD;&#x8F6C;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;<h3 id="2620&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x7EC3;&#x4E60;">26.20_&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;(&#x7EC3;&#x4E60;)</h3>
+</li>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x5411;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;<h3 id="2621day26&#x603B;&#x7ED3;">26.21_day26&#x603B;&#x7ED3;</h3>
+</li>
+<li>&#x628A;&#x4ECA;&#x5929;&#x7684;&#x77E5;&#x8BC6;&#x70B9;&#x603B;&#x7ED3;&#x4E00;&#x904D;&#x3002;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="day25笔记.html" class="navigation navigation-prev " aria-label="Previous page: day25.多线程(2)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="day27笔记.html" class="navigation navigation-next " aria-label="Next page: day27.反射">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"day26.网络编程","level":"1.25","depth":1,"next":{"title":"day27.反射","level":"1.26","depth":1,"path":"day27笔记.md","ref":"day27笔记.md","articles":[]},"previous":{"title":"day25.多线程(2)","level":"1.24","depth":1,"path":"day25笔记.md","ref":"day25笔记.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"day26笔记.md","mtime":"2018-10-31T03:08:51.575Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-31T03:56:02.696Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
